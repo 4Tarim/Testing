@@ -13,22 +13,32 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
-		<attributes>
-			<attribute name="module" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry exported="true" kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="src" output="target/classes" path="src/main/java">
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
+		<attributes>
+			<attribute name="module" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/ThinkPad_T540p/Documents/jars/cobertura-2.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ThinkPad_T540p/Documents/jars/cucumber-core-1.1.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ThinkPad_T540p/Documents/jars/cucumber-java-1.1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ThinkPad_T540p/Documents/jars/cucumber-junit-1.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ThinkPad_T540p/Documents/jars/cucumber-jvm-deps-1.0.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ThinkPad_T540p/Documents/jars/cucumber-reporting-0.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ThinkPad_T540p/Documents/jars/cucumber-reporting-5.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ThinkPad_T540p/Documents/jars/gherkin-2.7.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ThinkPad_T540p/Documents/jars/junit-4.11.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ThinkPad_T540p/Documents/jars/mockito-all-2.0.2-beta.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
