@@ -13,7 +13,7 @@ public class MortgageCalculatorTest extends Base {
 	
 	@Test
 	public void buySinglehouse() {
-		//goto website		
+		//goto HomePage	
 		HomePage myHomePage = new HomePage();
 		myHomePage.gotoMortgageCalculatorWesite();
 		myHomePage.selectCurrencyType("$");
