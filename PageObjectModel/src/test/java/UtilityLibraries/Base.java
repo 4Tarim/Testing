@@ -35,6 +35,7 @@ public class Base {
 			selLibrary.setDemoMode(true);
 		}	
 		
+		
 		browserType = myProperty.readProperty("browserType");		
 	
 		String remoteRun = myProperty.readProperty("isRemote");
@@ -51,6 +52,7 @@ public class Base {
 		
 	}
 
+	
 	@AfterClass // this method runs only 1 time after all tests are completed.
 	// after all the tests are completed, then try to close browsers
 	// if there are open browsers left from selenium
@@ -72,6 +74,7 @@ public class Base {
 		}
 	}
 
+	
 	@BeforeMethod // this method runs/executes depending on how many tests you
 	// have in your test class
 	// before each test starts - setting up browser
@@ -110,6 +113,7 @@ public class Base {
 		}		
 	}
 
+	
 	@AfterMethod // after each test is completed, cleaning up - close the browser
 	// capture screenshots only if there is test failure.
 	public void close(ITestResult result) {
