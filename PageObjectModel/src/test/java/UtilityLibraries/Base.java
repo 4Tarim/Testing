@@ -30,13 +30,13 @@ public class Base {
 		sessionTimeProp.setProperty("sessionTime", tempTestStartTime);
 
 		JavaPropertiesManager myProperty = new JavaPropertiesManager("src/test/resources/config.properties");
-		
 		String demoModePropValue = myProperty.readProperty("demoMode");
 		if (demoModePropValue.contains("On")) {
 			selLibrary.setDemoMode(true);
-		}		
-		browserType = myProperty.readProperty("browserType");		
+		}	
 		
+		browserType = myProperty.readProperty("browserType");		
+	
 		String remoteRun = myProperty.readProperty("isRemote");
 		if(remoteRun.toLowerCase().contains("on")) {
 			selLibrary.setIsRemote(true);
@@ -75,6 +75,7 @@ public class Base {
 	@BeforeMethod // this method runs/executes depending on how many tests you
 	// have in your test class
 	// before each test starts - setting up browser
+	
 	public void setup() {
 		logger.info("Test started...");
 		
@@ -119,6 +120,7 @@ public class Base {
 				// test failed, call capture screenshot method
 				selLibrary.captureScreenshot(result.getName(), "");
 			}
+			
 			selLibrary.closeBrowsers();
 			logger.info("Test is ended...");
 		} catch (Exception e) {
