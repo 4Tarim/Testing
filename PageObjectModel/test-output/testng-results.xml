@@ -2,16 +2,39 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-07T15:37:34 CET" name="Default suite" finished-at="2021-01-07T15:37:40 CET" duration-ms="6160">
+  <suite started-at="2021-01-07T19:10:02 CET" name="Default suite" finished-at="2021-01-07T19:10:21 CET" duration-ms="19232">
     <groups>
     </groups>
-    <test started-at="2021-01-07T15:37:34 CET" name="Default test" finished-at="2021-01-07T15:37:40 CET" duration-ms="6160">
-      <class name="Tests.SeleniumRemoteTesting">
-        <test-method signature="searchGoogleRemoteTest()[pri:0, instance:Tests.SeleniumRemoteTesting@3246fb96]" started-at="2021-01-07T15:37:34 CET" name="searchGoogleRemoteTest" finished-at="2021-01-07T15:37:40 CET" duration-ms="6117" status="PASS">
+    <test started-at="2021-01-07T19:10:02 CET" name="Default test" finished-at="2021-01-07T19:10:21 CET" duration-ms="19232">
+      <class name="Tests.MortgageCalculatorTest">
+        <test-method is-config="true" signature="beforeAllTests()[pri:0, instance:Tests.MortgageCalculatorTest@68c9133c]" started-at="2021-01-07T19:10:02 CET" name="beforeAllTests" finished-at="2021-01-07T19:10:02 CET" duration-ms="47" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchGoogleRemoteTest -->
-      </class> <!-- Tests.SeleniumRemoteTesting -->
+        </test-method> <!-- beforeAllTests -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.MortgageCalculatorTest@68c9133c]" started-at="2021-01-07T19:10:02 CET" name="setup" finished-at="2021-01-07T19:10:08 CET" duration-ms="6546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="buySinglehouse()[pri:0, instance:Tests.MortgageCalculatorTest@68c9133c]" started-at="2021-01-07T19:10:08 CET" name="buySinglehouse" finished-at="2021-01-07T19:10:16 CET" duration-ms="7570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buySinglehouse -->
+        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:Tests.MortgageCalculatorTest@68c9133c]" started-at="2021-01-07T19:10:16 CET" name="close" finished-at="2021-01-07T19:10:21 CET" duration-ms="5032" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=buySinglehouse status=SUCCESS method=MortgageCalculatorTest.buySinglehouse()[pri:0, instance:Tests.MortgageCalculatorTest@68c9133c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="afterAllTests()[pri:0, instance:Tests.MortgageCalculatorTest@68c9133c]" started-at="2021-01-07T19:10:21 CET" name="afterAllTests" finished-at="2021-01-07T19:10:21 CET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterAllTests -->
+      </class> <!-- Tests.MortgageCalculatorTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

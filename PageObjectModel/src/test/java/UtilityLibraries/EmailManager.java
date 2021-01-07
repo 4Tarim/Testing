@@ -43,7 +43,7 @@ public class EmailManager {
 		 */
 
 		public void sendEmail(String emailBody, List<String> attachments) {
-			sendEmail("smtp.gmail.com", "587", "qa.testing.811@gmail.com", "Muralim811!!", "Automated Testing Email Report",
+			sendEmail("smtp.gmail.com", "587", "selenium.jenkins.email@gmail.com", "unicam2020", "Automated Testing Email Report",
 					emailBody, attachments);
 		}
 
