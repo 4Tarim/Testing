@@ -65,8 +65,8 @@ public class Base {
 		if (isSendEmail.toLowerCase().contains("on")) {
 			// Sending emails...
 			EmailManager email = new EmailManager();
-			email.toAddress = "musabaytechcorp@gmail.com;training@musabaytechnologies.com";
-			email.ccAddress = "gintonic0729@gmail.com;jo0ooe89@gmail.com";
+			email.toAddress = "selenium.jenkins.email@gmail.com;abdurahman.tevekkul@gmail.com";
+			email.ccAddress = "selenium.jenkins.email@gmail.com";
 			selLibrary.autoAttachErrorImgToEmail();
 			selLibrary.errorScreenshots.add("target/logs/log4j-selenium.log");
 			selLibrary.errorScreenshots.add("target/logs/Selenium-Report.html");
