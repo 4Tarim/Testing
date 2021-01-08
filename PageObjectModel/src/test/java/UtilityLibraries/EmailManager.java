@@ -35,8 +35,9 @@ public class EmailManager {
 		 * "You passed our final interview and we are exited to make you a job offer! + "
 		 * + "<br><br> Regards, <br>HR team";
 		 * 
-		 * List<String> attachments = new ArrayList<>(); EmailManager myEmail = new
-		 * EmailManager(); myEmail.toAddress =
+		 * List<String> attachments = new ArrayList<>(); 
+		 * EmailManager myEmail = new
+		 * myEmail.toAddress =EmailManager();
 		 * "musabaytechcorp@gmail.com;frank@musabaytechnologies.com"; myEmail.ccAddress
 		 * = "gintonic0729@gmail.com;jo0ooe89@gmail.com";
 		 * myEmail.sendEmail(emailBody,attachments ); }
