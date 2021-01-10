@@ -1,7 +1,5 @@
 package tests;
 
-import static org.testng.Assert.assertTrue;
-
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
