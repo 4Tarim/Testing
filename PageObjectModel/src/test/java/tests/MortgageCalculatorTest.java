@@ -13,7 +13,6 @@ public class MortgageCalculatorTest extends Base {
 	
 	@Test
 	public void buySinglehouse() {
-		
 		//goto HomePage	
 		HomePage myHomePage = new HomePage();
 		myHomePage.gotoMortgageCalculatorWesite();
