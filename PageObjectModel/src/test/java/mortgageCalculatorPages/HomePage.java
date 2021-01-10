@@ -3,6 +3,8 @@ package mortgageCalculatorPages;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
+import java.util.List;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -19,8 +21,10 @@ public class HomePage extends Base {
 			String actualWebsiteTitle = driver.getTitle();
 			String expctedTitle = "Mortgage Calculator 2021 - FREE Calculator Tool (ZERO Ads)";
 			assertEquals(actualWebsiteTitle, expctedTitle);
+			
+			List<WebElement> links = driver.findElements(By.tagName("a"));
 
-			logger.info("Step1: goto mortgage calculator website");
+			logger.info("Step1: goto mortgage calculator website  " + " and  total links:  " + links.size());
 		} catch (Exception e) {
 			logger.error("Error", e);
 			assertTrue(true);
