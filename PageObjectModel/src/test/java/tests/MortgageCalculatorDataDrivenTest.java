@@ -1,4 +1,4 @@
-package Tests;
+package tests;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
@@ -7,10 +7,10 @@ import org.apache.log4j.Logger;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import MortgageCalculatorPages.HomePage;
-import MortgageCalculatorPages.ResultPage;
-import UtilityLibraries.Base;
-import UtilityLibraries.ExcelManager;
+import mortgageCalculatorPages.HomePage;
+import mortgageCalculatorPages.ResultPage;
+import utilityLibraries.Base;
+import utilityLibraries.ExcelManager;
 
 public class MortgageCalculatorDataDrivenTest extends Base {
 	final static Logger logger = Logger.getLogger(MortgageCalculatorDataDrivenTest.class);

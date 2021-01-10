@@ -1,11 +1,11 @@
-package Tests;
+package tests;
 
 import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-import UtilityLibraries.Base;
+import utilityLibraries.Base;
 
 public class FileUploadTests extends Base {
 

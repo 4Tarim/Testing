@@ -1,4 +1,4 @@
-package UtilityLibraries;
+package utilityLibraries;
 
 import static org.testng.Assert.assertTrue;
 

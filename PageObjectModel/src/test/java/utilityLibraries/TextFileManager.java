@@ -1,4 +1,4 @@
-package UtilityLibraries;
+package utilityLibraries;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

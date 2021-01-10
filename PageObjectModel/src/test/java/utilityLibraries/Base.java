@@ -1,4 +1,4 @@
-package UtilityLibraries;
+package utilityLibraries;
 
 
 import org.apache.log4j.Logger;
@@ -9,7 +9,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
-import UtilityLibraries.GlobalSeleniumLibrary.Browser;
+import utilityLibraries.GlobalSeleniumLibrary.Browser;
 
 public class Base {
 	final static Logger logger = Logger.getLogger(Base.class);

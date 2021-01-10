@@ -1,4 +1,4 @@
-package MortgageCalculatorPages;
+package mortgageCalculatorPages;
 
 import static org.testng.Assert.assertNotNull;
 import static org.testng.Assert.assertTrue;
@@ -7,7 +7,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import UtilityLibraries.Base;
+import utilityLibraries.Base;
 
 public class ResultPage extends Base {
 	final static Logger logger = Logger.getLogger(ResultPage.class);
