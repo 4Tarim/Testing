@@ -13,6 +13,7 @@ import com.aventstack.extentreports.ExtentReports;
 import utilityLibraries.GlobalSeleniumLibrary.Browser;
 
 public class Base {
+
 	final static Logger logger = Logger.getLogger(Base.class);
 
 	public static WebDriver driver;
@@ -21,7 +22,11 @@ public class Base {
 	private String hubURL;
 	public ExtentReports report;
 
-	@BeforeClass // before all tests start, this method runs only 1 time
+	/***
+	 * before all tests start, this method runs only 1 time
+	 */
+
+	@BeforeClass
 	public void beforeAllTests() {
 		selLibrary = new GlobalSeleniumLibrary();
 
@@ -51,12 +56,13 @@ public class Base {
 		}
 	}
 
-	
-	@AfterClass // this method runs only 1 time after all tests are completed.
-	// after all the tests are completed, then try to close browsers
-	// if there are open browsers left from selenium
+	/***
+	 * This method runs only 1 time after all tests are completed. in this methos
+	 * also atatch all selenium reports and ErrorImg send to Team email.
+	 */
+
+	@AfterClass
 	public void afterAllTests() {
-		// selLibrary.closeBrowsers();
 		logger.info("All the tests are completed...");
 
 		JavaPropertiesManager configProp = new JavaPropertiesManager("src/test/resources/config.properties");
@@ -70,14 +76,14 @@ public class Base {
 			selLibrary.errorScreenshots.add("target/logs/log4j-selenium.log");
 			selLibrary.errorScreenshots.add("target/logs/Selenium-Report.html");
 			email.sendEmail(selLibrary.errorScreenshots);
-	
 		}
 	}
 
-	
-	@BeforeMethod // this method runs/executes depending on how many tests you
-	// have in your test class
-	// before each test starts - setting up browser
+	/***
+	 * this method runs/executes depending on how many tests you // have in your
+	 * test class, before each test starts - setting up browser
+	 */
+	@BeforeMethod
 
 	public void setup() {
 		logger.info("Test started...");
@@ -111,10 +117,13 @@ public class Base {
 		}
 	}
 
-	
-	
-	@AfterMethod // after each test is completed, cleaning up - close the browser
-	// capture screenshots only if there is test failure.
+	/***
+	 * after each test is completed, cleaning up - close the browser capture
+	 * screenshots only if there is test failure.
+	 * 
+	 * @param result
+	 */
+	@AfterMethod
 	public void close(ITestResult result) {
 		try {
 			Thread.sleep(5 * 1000);
