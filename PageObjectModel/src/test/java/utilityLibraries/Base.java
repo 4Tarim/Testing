@@ -1,6 +1,5 @@
 package utilityLibraries;
 
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
@@ -8,6 +7,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+
+import com.aventstack.extentreports.ExtentReports;
 
 import utilityLibraries.GlobalSeleniumLibrary.Browser;
 
@@ -18,6 +19,7 @@ public class Base {
 	public static GlobalSeleniumLibrary selLibrary;
 	private String browserType;
 	private String hubURL;
+	public ExtentReports report;
 
 	@BeforeClass // before all tests start, this method runs only 1 time
 	public void beforeAllTests() {
@@ -33,23 +35,20 @@ public class Base {
 		String demoModePropValue = myProperty.readProperty("demoMode");
 		if (demoModePropValue.contains("On")) {
 			selLibrary.setDemoMode(true);
-		}	
-		
-		
-		browserType = myProperty.readProperty("browserType");		
-	
+		}
+
+		browserType = myProperty.readProperty("browserType");
 		String remoteRun = myProperty.readProperty("isRemote");
-		if(remoteRun.toLowerCase().contains("on")) {
+		if (remoteRun.toLowerCase().contains("on")) {
 			selLibrary.setIsRemote(true);
 			hubURL = myProperty.readProperty("hubURL");
 			logger.info("hubURL is: [" + hubURL + "]");
 		}
-		
+
 		String headless = myProperty.readProperty("isHeadless");
-		if(headless.toLowerCase().contains("on")) {
+		if (headless.toLowerCase().contains("on")) {
 			selLibrary.setChromeHeadless(true);
 		}
-		
 	}
 
 	
@@ -71,6 +70,7 @@ public class Base {
 			selLibrary.errorScreenshots.add("target/logs/log4j-selenium.log");
 			selLibrary.errorScreenshots.add("target/logs/Selenium-Report.html");
 			email.sendEmail(selLibrary.errorScreenshots);
+	
 		}
 	}
 
@@ -78,25 +78,24 @@ public class Base {
 	@BeforeMethod // this method runs/executes depending on how many tests you
 	// have in your test class
 	// before each test starts - setting up browser
-	
+
 	public void setup() {
 		logger.info("Test started...");
-		
-		if(selLibrary.getIsRemote() == true) {
+
+		if (selLibrary.getIsRemote() == true) {
 			if (browserType.toLowerCase().contains("chrome")) {
-			driver = selLibrary.startRemoteBrowser(hubURL, Browser.CHROME);
+				driver = selLibrary.startRemoteBrowser(hubURL, Browser.CHROME);
 			} else if (browserType.toLowerCase().contains("firefox")) {
-				driver = selLibrary.startRemoteBrowser(hubURL,Browser.FIREFOX);
+				driver = selLibrary.startRemoteBrowser(hubURL, Browser.FIREFOX);
 			} else if (browserType.toLowerCase().contains("ie")) {
 				driver = selLibrary.startRemoteBrowser(hubURL, Browser.IE);
 			} else if (browserType.toLowerCase().contains("edge")) {
 				driver = selLibrary.startRemoteBrowser(hubURL, Browser.EDGE);
-			}			
-			else {
+			} else {
 				logger.info("Starting default browser as [Chrome].");
 				driver = selLibrary.startRemoteBrowser(hubURL, Browser.CHROME);
 			}
-		}else {
+		} else {
 			if (browserType.toLowerCase().contains("chrome")) {
 				driver = selLibrary.startLocalBrowser(Browser.CHROME);
 			} else if (browserType.toLowerCase().contains("firefox")) {
@@ -105,26 +104,24 @@ public class Base {
 				driver = selLibrary.startLocalBrowser(Browser.IE);
 			} else if (browserType.toLowerCase().contains("edge")) {
 				driver = selLibrary.startLocalBrowser(Browser.EDGE);
-			}			
-			else {
+			} else {
 				logger.info("Starting default browser as [Chrome].");
 				driver = selLibrary.startLocalBrowser(Browser.CHROME);
 			}
-		}		
+		}
 	}
 
+	
 	
 	@AfterMethod // after each test is completed, cleaning up - close the browser
 	// capture screenshots only if there is test failure.
 	public void close(ITestResult result) {
 		try {
 			Thread.sleep(5 * 1000);
-
 			if (ITestResult.FAILURE == result.getStatus()) {
 				// test failed, call capture screenshot method
 				selLibrary.captureScreenshot(result.getName(), "");
 			}
-			
 			selLibrary.closeBrowsers();
 			logger.info("Test is ended...");
 		} catch (Exception e) {

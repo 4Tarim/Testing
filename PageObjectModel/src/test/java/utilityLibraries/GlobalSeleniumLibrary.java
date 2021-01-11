@@ -41,7 +41,7 @@ import com.google.common.io.Files;
 /***
  * This class have all Selenium/WebDriver related wrapper methods and features.
  * 
- * @author Administrator Created on 10/24/2020
+ * @author Administrator Created on 10/01/2021
  */
 public class GlobalSeleniumLibrary {
 	final Logger logger = Logger.getLogger(GlobalSeleniumLibrary.class);
@@ -286,6 +286,11 @@ public class GlobalSeleniumLibrary {
 		return driver;
 	}
 
+	/***
+	 * This method starts/launch a IE Browser
+	 * 
+	 * @return WebDriver
+	 */
 	private WebDriver startIEBrowser() {
 		try {
 			InternetExplorerOptions IEOps = new InternetExplorerOptions();
@@ -303,6 +308,11 @@ public class GlobalSeleniumLibrary {
 		return driver;
 	}
 
+	/***
+	 * This method starts/launch a Safari Browser
+	 * 
+	 * @return WebDriver
+	 */
 	private WebDriver startSafariBrowser() {
 		try {
 			logger.debug("finish the implementation - homework");
@@ -314,10 +324,15 @@ public class GlobalSeleniumLibrary {
 		return driver;
 	}
 
+	/***
+	 * This method starts/launch a Edge Browser
+	 * 
+	 * @return WebDriver
+	 */
 	private WebDriver startEdgeBrowser() {
 		try {
 			EdgeOptions edgeOps = new EdgeOptions();
-			System.setProperty("webdriver.edge.driver", "src/test/resources/drivers/msedgedriver.exe");			
+			System.setProperty("webdriver.edge.driver", "src/test/resources/drivers/msedgedriver.exe");
 			driver = new EdgeDriver(edgeOps);
 		} catch (Exception e) {
 			logger.error("Error: ", e);
@@ -326,6 +341,11 @@ public class GlobalSeleniumLibrary {
 		return driver;
 	}
 
+	/***
+	 * This method scroll the scroll bar until element is present
+	 * 
+	 * @param element
+	 */
 	public void scrollToElement(WebElement element) {
 		try {
 			JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -336,6 +356,11 @@ public class GlobalSeleniumLibrary {
 		}
 	}
 
+	/***
+	 * This methos scroll down and we will give pixel value
+	 * 
+	 * @param pixels
+	 */
 	public void scrollUpDown(int pixels) {
 		try {
 			JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -356,6 +381,12 @@ public class GlobalSeleniumLibrary {
 		}
 	}
 
+	/***
+	 * This method highlight the Webelements, advantage is provide good vision on
+	 * the presentation
+	 * 
+	 * @param element
+	 */
 	public void highlightElement(WebElement element) {
 		if (isDemoMode == true) {
 			try {
@@ -363,9 +394,9 @@ public class GlobalSeleniumLibrary {
 					JavascriptExecutor js = (JavascriptExecutor) driver;
 					js.executeScript("arguments[0].setAttribute('style', arguments[1]);", element,
 							"color: red; border: 2px solid yellow");
-					customWait(0.5);
+					customWait(0.2);
 					js.executeScript("arguments[0].setAttribute('style', arguments[1]);", element, "");
-					customWait(0.5);
+					customWait(0.2);
 				}
 			} catch (Exception e) {
 				logger.error("Error: ", e);
@@ -374,6 +405,13 @@ public class GlobalSeleniumLibrary {
 		}
 	}
 
+	/***
+	 * This method is Explicit wait ( wait until WebElement is visible, time unit is
+	 * second)
+	 * 
+	 * @param by
+	 * @return
+	 */
 	public WebElement waitForElementVisibility(By by) {
 		WebElement elem = null;
 		try {
@@ -386,6 +424,12 @@ public class GlobalSeleniumLibrary {
 		return elem;
 	}
 
+	/***
+	 * Explicit wait for an element to be present
+	 * 
+	 * @param by
+	 * @return WebElement
+	 */
 	public WebElement waitForElementPresence(By by) {
 		WebElement elem = null;
 		try {
@@ -416,6 +460,12 @@ public class GlobalSeleniumLibrary {
 		return elem;
 	}
 
+	/***
+	 * Enter text to text after locate the WebElement
+	 * 
+	 * @param by
+	 * @param inputTxt
+	 */
 	public void enterTxt(By by, String inputTxt) {
 		try {
 			WebElement element = driver.findElement(by);
@@ -437,6 +487,11 @@ public class GlobalSeleniumLibrary {
 		}
 	}
 
+	/***
+	 * Click button
+	 * 
+	 * @param by
+	 */
 	public void clickElement(By by) {
 		try {
 			WebElement elem = driver.findElement(by);
@@ -468,6 +523,11 @@ public class GlobalSeleniumLibrary {
 		}
 	}
 
+	/***
+	 * Custom wait, time unit is second
+	 * 
+	 * @param inSeconds
+	 */
 	public void customWait(double inSeconds) {
 		try {
 			Thread.sleep((long) (inSeconds * 1000));
@@ -525,6 +585,12 @@ public class GlobalSeleniumLibrary {
 		return driver;
 	}
 
+	/***
+	 * This method is handling switch browser.
+	 * 
+	 * @param index
+	 * @return
+	 */
 	public WebDriver switchToBrowserByIndex(int index) {
 		int totalBrowsers = 0;
 		try {
@@ -600,6 +666,12 @@ public class GlobalSeleniumLibrary {
 		return driver;
 	}
 
+	/***
+	 * This method handles the checkbox
+	 * 
+	 * @param by
+	 * @param isCheck
+	 */
 	public void handleCheckBox(By by, boolean isCheck) {
 		// scenarios
 		// 1) user wants to check the check-box,
@@ -644,6 +716,13 @@ public class GlobalSeleniumLibrary {
 		}
 	}
 
+	/***
+	 * this method capture the screen shot when we use it in the test, data format
+	 * is .png, stored in screenshots folder
+	 * 
+	 * @param screnshotFileName
+	 * @param filePath
+	 */
 	public void captureScreenshot(String screnshotFileName, String filePath) {
 		String finalScreenshotPath = null;
 		try {
@@ -668,6 +747,11 @@ public class GlobalSeleniumLibrary {
 		logger.info("Screenshot location: " + fullPath);
 	}
 
+	/***
+	 * This method check the directory and if no exists, create input path.
+	 * 
+	 * @param inputPath
+	 */
 	private void checkDirectory(String inputPath) {
 		File file = new File(inputPath);
 		String abPath = file.getAbsolutePath();
@@ -686,6 +770,12 @@ public class GlobalSeleniumLibrary {
 		}
 	}
 
+	/***
+	 * This method get Absolute path
+	 * 
+	 * @param inputPath
+	 * @return
+	 */
 	private String getAbsulatePath(String inputPath) {
 		String abPath = null;
 		try {
@@ -698,15 +788,21 @@ public class GlobalSeleniumLibrary {
 		return abPath;
 	}
 
+	/***
+	 * This will capture screen shot at the break point and auto attach email sender
+	 * auto send email to team with reports together.
+	 * 
+	 * @return
+	 */
 	public List<String> autoAttachErrorImgToEmail() {
 		List<String> fileNames = new ArrayList<>();
 		try {
 			JavaPropertiesManager sessionTimeProp = new JavaPropertiesManager(
-					"src/test/resources/sessionConfig.properties");
+					"src/test/resources/sessionConfig.properties/");
 			String startTimeStamp = sessionTimeProp.readProperty("sessionTime");
 			// String imgTimeStamp = null;
 			// long testStatTime = Long.parseLong(startTimeStamp);
-			File file = new File("target/screenshots");
+			File file = new File("target/screenshots/");
 			if (file.isDirectory()) {
 				if (file.list().length > 0) {
 					File[] screenShotFiles = file.listFiles();
@@ -738,6 +834,12 @@ public class GlobalSeleniumLibrary {
 		return fileNames;
 	}
 
+	/***
+	 * this method is uploading a file
+	 * 
+	 * @param filePath
+	 * @param by
+	 */
 	public void uploadFile(String filePath, By by) {
 		String absulateFilePath = null;
 		try {
@@ -755,6 +857,9 @@ public class GlobalSeleniumLibrary {
 		logger.info("file uploaded: " + absulateFilePath);
 	}
 
+	/***
+	 * this methos is close browser, opend browser webpage
+	 */
 	public void closeBrowsers() {
 		if (driver != null) {
 			driver.close();
@@ -771,25 +876,7 @@ public class GlobalSeleniumLibrary {
 		GlobalSeleniumLibrary myObject = new GlobalSeleniumLibrary();
 		myObject.autoAttachErrorImgToEmail();
 
-		// myObject.getCurrentTime();
-		// difference between mkdir() vs mkdirs()
-
-		// let's assume using mkdir() --> result: only "c:/abc" folder would be created
-		// myObject.checkDirectory("c:/abc/aaa/a1/2/1");
-
-		// let's assume using mkdirs() --> result: it creates full folder and
-		// sub-folders like 'c:/abc/aaa/a1/2/1'
-		// myObject.checkDirectory("c:/abc/aaa/a1/2/1");
 	}
 
 }
 
-// check if folder path is exist, not create the path
-/*
- * String tempInput = screnshotFilePath; String folders = tempInput.substring(0,
- * tempInput.lastIndexOf("/") + 1); String imageName =
- * tempInput.substring(tempInput.lastIndexOf("/") + 1, (tempInput.length()));
- * 
- * File filePath = new File(folders); if (!filePath.exists()) {
- * filePath.mkdirs(); }
- */
