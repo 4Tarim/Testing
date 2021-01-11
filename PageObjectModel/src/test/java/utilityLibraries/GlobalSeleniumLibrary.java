@@ -394,9 +394,9 @@ public class GlobalSeleniumLibrary {
 					JavascriptExecutor js = (JavascriptExecutor) driver;
 					js.executeScript("arguments[0].setAttribute('style', arguments[1]);", element,
 							"color: red; border: 2px solid yellow");
-					customWait(0.2);
+					customWait(0.5);
 					js.executeScript("arguments[0].setAttribute('style', arguments[1]);", element, "");
-					customWait(0.2);
+					customWait(0.5);
 				}
 			} catch (Exception e) {
 				logger.error("Error: ", e);

@@ -17,7 +17,7 @@ public class ResultPage extends Base {
 	
 	public ResultPage() {
 		try {
-			logger.info("Step 3: Page Synchronization ---> to ResultPage");			
+			logger.info("Step 3: Page Synchronization -------------> to ResultPage");			
 			monthPayAmntElement = selLibrary.waitForElementVisibility(By.id("summaryMonthly"));
 			selLibrary.highlightElement(monthPayAmntElement);
 			assertNotNull(monthPayAmntElement);

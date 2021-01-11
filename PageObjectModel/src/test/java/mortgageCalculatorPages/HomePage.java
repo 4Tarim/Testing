@@ -17,6 +17,7 @@ public class HomePage extends Base {
 
 	public HomePage gotoMortgageCalculatorWesite() {
 		try {
+			
 			driver.get("http://www.mortgagecalculator.net/");
 			
 			String actualWebsiteTitle = driver.getTitle();
@@ -25,7 +26,7 @@ public class HomePage extends Base {
 			
 			List<WebElement> links = driver.findElements(By.tagName("a"));
 
-			logger.info("Step1: goto mortgage calculator website  " + " and  total links:  " + links.size());
+			logger.info("Step1: goto mortgage calculator website !  " + " total links:  " + links.size());
 		} catch (Exception e) {
 			logger.error("Error", e);
 			assertTrue(true);
@@ -36,7 +37,7 @@ public class HomePage extends Base {
 	public HomePage selectCurrencyType(String currencySymbol) {
 		WebElement CurrencyTypeDropDown = driver.findElement(By.cssSelector("#currency"));
 		selLibrary.highlightElement(CurrencyTypeDropDown);
-		selLibrary.selectDropDown(By.cssSelector("#currency"), currencySymbol);
+		selLibrary.selectDropDown(CurrencyTypeDropDown, currencySymbol);
 		logger.info("Step2: start to locate the elements and highlight");
 		return this;
 	}
@@ -44,70 +45,70 @@ public class HomePage extends Base {
 	public HomePage enterAmount(String amount) {
 		WebElement AmountTextBox = driver.findElement(By.cssSelector("#amount"));
 		selLibrary.highlightElement(AmountTextBox);
-		selLibrary.enterTxt(By.cssSelector("#amount"), amount);
+		selLibrary.enterTxt(AmountTextBox, amount);
 		return this;
 	}
 
 	public HomePage enterAmortizationYear(String amortizationYear) {
 		WebElement AmortizationYear = driver.findElement(By.id("amortizationYears"));
 		selLibrary.highlightElement(AmortizationYear);
-		selLibrary.enterTxt(By.id("amortizationYears"), amortizationYear);
+		selLibrary.enterTxt(AmortizationYear, amortizationYear);
 		return this;
 	}
 
 	public HomePage enterAmortizationMonth(String amortizationMonth) {
 		WebElement AmortizationMonth = driver.findElement(By.xpath("//*[@id='amortizationMonths']"));
 		selLibrary.highlightElement(AmortizationMonth);
-		selLibrary.enterTxt(By.xpath("//*[@id='amortizationMonths']"), amortizationMonth);
+		selLibrary.enterTxt(AmortizationMonth, amortizationMonth);
 		return this;
 	}
 
 	public HomePage enterInterestTermYear(String intTermYear) {
 		WebElement InterestTermYear = driver.findElement(By.id("interestTermYears"));
 		selLibrary.highlightElement(InterestTermYear);
-		selLibrary.enterTxt(By.id("interestTermYears"), intTermYear);
+		selLibrary.enterTxt(InterestTermYear, intTermYear);
 		return this;
 	}
 
 	public HomePage enterInterestTermMonth(String intTermMonth) {
 		WebElement InterestTermMonths = driver.findElement(By.id("interestTermMonths"));
 		selLibrary.highlightElement(InterestTermMonths);
-		selLibrary.enterTxt(By.id("interestTermMonths"), intTermMonth);
+		selLibrary.enterTxt(InterestTermMonths, intTermMonth);
 		return this;
 	}
 
 	public HomePage selectInterestType(String intType) {
 		WebElement InterestType = driver.findElement(By.id("interestType"));
 		selLibrary.highlightElement(InterestType);
-		selLibrary.selectDropDown(By.id("interestType"), intType);
+		selLibrary.selectDropDown(InterestType, intType);
 		return this;
 	}
 
 	public HomePage enterInterestRate(String intRate) {
 		WebElement InterestRate = driver.findElement(By.cssSelector("#rate"));
 		selLibrary.highlightElement(InterestRate);
-		selLibrary.enterTxt(By.cssSelector("#rate"), intRate);
+		selLibrary.enterTxt(InterestRate, intRate);
 		return this;
 	}
 
 	public HomePage enterStartMonth(String startMonth) {
 		WebElement StartMonth = driver.findElement(By.id("startMonth"));
 		selLibrary.highlightElement(StartMonth);
-		selLibrary.selectDropDown(By.id("startMonth"), startMonth);
+		selLibrary.selectDropDown(StartMonth, startMonth);
 		return this;
 	}
 
 	public HomePage selectStartYear(String startYear) {
 		WebElement StartYear = driver.findElement(By.id("startYear"));
 		selLibrary.highlightElement(StartYear);
-		selLibrary.selectDropDown(By.id("startYear"), startYear);
+		selLibrary.selectDropDown(StartYear, startYear);
 		return this;
 	}
 
 	public HomePage selectPaymentPeriod(String paymentPeriod) {
 		WebElement PaymentPeriod = driver.findElement(By.id("paymentMode"));
 		selLibrary.highlightElement(PaymentPeriod);
-		selLibrary.selectDropDown(By.id("paymentMode"), paymentPeriod);
+		selLibrary.selectDropDown(PaymentPeriod, paymentPeriod);
 		return this;
 	}
 
