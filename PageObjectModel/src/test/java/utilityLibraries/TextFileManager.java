@@ -79,14 +79,5 @@ public class TextFileManager {
 		}
 		logger.info("Creating external file: " + fileName);
 	}
-
-	/*
-	 * public static void main(String[] args) { TextFileManager fileWriter = new
-	 * TextFileManager("c:/img/Frank/myData1/codeData1.txt");
-	 * fileWriter.writeFile("I love Java Programming!"); //String data =
-	 * fileWriter.readFile(); //logger.info("data is: " + data);
-	 * 
-	 * }
-	 */
 	
 }
