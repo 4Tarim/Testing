@@ -45,7 +45,7 @@ public class HomePage extends Base {
 	public HomePage enterAmount(String amount) {
 		WebElement AmountTextBox = driver.findElement(By.cssSelector("#amount"));
 		selLibrary.highlightElement(AmountTextBox);
-		selLibrary.enterTxt(AmountTextBox, amount);
+		selLibrary.enterTxt(By.cssSelector("#amount"), amount);
 		return this;
 	}
 

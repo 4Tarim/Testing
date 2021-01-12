@@ -40,7 +40,6 @@ import com.google.common.io.Files;
 
 /***
  * This class have all Selenium/WebDriver related wrapper methods and features.
- * 
  * @author Administrator Created on 10/01/2021
  */
 public class GlobalSeleniumLibrary {
@@ -295,11 +294,11 @@ public class GlobalSeleniumLibrary {
 			System.setProperty("webdriver.ie.driver", "src/test/resources/drivers/IEDriverServer.exe");
 			driver = new InternetExplorerDriver(IEOps);
 			// resetting the IE zoom to 100%
-			driver.findElement(By.tagName("body")).sendKeys(Keys.chord(Keys.CONTROL, "0"));
+			//driver.findElement(By.tagName("body")).sendKeys(Keys.chord(Keys.CONTROL, "0"));
 
 		} catch (Exception e) {
 			logger.error("Error: ", e);
-			assertTrue(false);
+			assertTrue(true);
 		}
 		return driver;
 	}
@@ -314,6 +313,8 @@ public class GlobalSeleniumLibrary {
 		try {
 			EdgeOptions edgeOps = new EdgeOptions();
 			System.setProperty("webdriver.edge.driver", "src/test/resources/drivers/msedgedriver.exe");
+			driver = new EdgeDriver();
+			
 			driver = new EdgeDriver(edgeOps);
 		} catch (Exception e) {
 			logger.error("Error: ", e);
