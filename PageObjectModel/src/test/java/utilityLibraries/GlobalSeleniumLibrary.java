@@ -221,10 +221,6 @@ public class GlobalSeleniumLibrary {
 				driver = startFirefoxBrowser();
 				break;
 
-			case SAFARI:
-				driver = startSafariBrowser();
-				break;
-
 			case EDGE:
 				driver = startEdgeBrowser();
 
@@ -308,21 +304,6 @@ public class GlobalSeleniumLibrary {
 		return driver;
 	}
 
-	/***
-	 * This method starts/launch a Safari Browser
-	 * 
-	 * @return WebDriver
-	 */
-	private WebDriver startSafariBrowser() {
-		try {
-			logger.debug("finish the implementation - homework");
-			logger.info("This method is not implemented yet!");
-		} catch (Exception e) {
-			logger.error("Error: ", e);
-			assertTrue(false);
-		}
-		return driver;
-	}
 
 	/***
 	 * This method starts/launch a Edge Browser
