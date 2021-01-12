@@ -36,11 +36,9 @@ public class MortgageCalculatorDataDrivenTest extends Base {
 		try {
 		HomePage calHomePage = new HomePage();
 		calHomePage.gotoMortgageCalculatorWesite()
-		//.selectCurrencyType("€")
 		.selectCurrencyType("$")
 		.enterAmount(amount)
 		.enterAmortizationYear(Myear)
-		//.enterAmortizationYear("30")
 		.enterAmortizationMonth(Mmonth)
 		.enterInterestTermYear(intYear)
 		.enterInterestTermMonth(intMonth)
@@ -49,7 +47,6 @@ public class MortgageCalculatorDataDrivenTest extends Base {
 		.enterStartMonth(startMonth)
 		.selectStartYear(startYear)
 		.selectPaymentPeriod(paymentPeriod)
-		//.selectPaymentPeriod("Monthly")
 		.clickCalculateButton();
 		
 		ResultPage calResultPage = new ResultPage();
@@ -59,8 +56,6 @@ public class MortgageCalculatorDataDrivenTest extends Base {
 		
 		assertEquals(monthlyPayment, expectedResult);
 		
-		//String weeklyPayment = calResultPage.getTotalPayment();
-		//assertEquals(weeklyPayment, "$400.48");	
 		} catch (Exception e) {
 			logger.error("Error: ", e);
 			assertTrue(false);
