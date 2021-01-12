@@ -155,12 +155,7 @@ public class ExcelManager {
 		return workbook;
 	}
 	
-	public static void main(String[] args) {
-		//ExcelManager exceUtil = new ExcelManager("src/test/resources/testData/"
-		//		+ "CalculaterTestData.xlsx", 0);
-		
-		//logger.info("Excel data --------");
-		//logger.info(exceUtil.getExcelAllData());		
+	public static void main(String[] args) {	
 		
 		ExcelManager exceUtil2 = new ExcelManager("src/test/resources/testData/"
 				+ "CalculaterTestData2.xls", 0);
