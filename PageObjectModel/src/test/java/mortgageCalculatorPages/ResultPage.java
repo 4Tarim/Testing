@@ -15,6 +15,9 @@ public class ResultPage extends Base {
 	
 	String totalSummaryTxt;
 	
+	/***
+	 * waiting calculation finsh and get the final result of Monthly Payments
+	 */
 	public ResultPage() {
 		try {
 			logger.info("Step 3: Page Synchronization -------------> to ResultPage");			
@@ -28,12 +31,20 @@ public class ResultPage extends Base {
 		}
 	}
 	
+	/****4
+	 * use getAttribute method to get Monthly Paymet amount value from monthly Payment Box
+	 * @return
+	 */
 	public String getMonthlyPayment() {
 		String monthPaymentTxt = monthPayAmntElement.getAttribute("value");
 		logger.info("Monthly Payment: " + monthPaymentTxt);
 		return monthPaymentTxt;
 	}
 	
+	/***
+	 * Locate the Total Interest result box and highlight, get the value, print using Apache Log4J
+	 * @return
+	 */
 	public String getTotalInterest() {
 		WebElement totalInterestElement = driver.findElement(By.id("summaryInterest"));
 		selLibrary.highlightElement(totalInterestElement);
@@ -42,6 +53,10 @@ public class ResultPage extends Base {
 		return totalInterestTxt;
 	}
 	
+	/***
+	 * Locate the total payment section and highlight, get the value using getAttribute value method
+	 * @return
+	 */
 	public String getTotalPayment() {
 		try {
 			WebElement totalSummaryPayment = driver.findElement(By.id("summaryTotal"));
@@ -54,7 +69,6 @@ public class ResultPage extends Base {
 			logger.error("Error", e);
 			assertTrue(false);
 		}
-		
 		return totalSummaryTxt;
 	}
 }
