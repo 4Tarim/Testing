@@ -21,13 +21,11 @@ public class HomePage extends Base {
 	 */
 	public HomePage gotoMortgageCalculatorWesite() {
 		try {
-
 			driver.get("http://www.mortgagecalculator.net/");
-
 			String actualWebsiteTitle = driver.getTitle();
 			String expctedTitle = "Mortgage Calculator 2021 - FREE Calculator Tool (ZERO Ads)";
 			assertEquals(actualWebsiteTitle, expctedTitle);
-
+           // Find all links
 			List<WebElement> links = driver.findElements(By.tagName("a"));
 
 			logger.info("Step1: goto mortgage calculator website !  " + " total links:  " + links.size());
