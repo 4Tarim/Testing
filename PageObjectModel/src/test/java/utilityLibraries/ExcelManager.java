@@ -23,8 +23,7 @@ public class ExcelManager {
 	private static Sheet sh;
 
 	/***
-	 * Constructor
-	 * 
+	 * Constructor (Configuration with external excel file)
 	 * @param excelFile
 	 * @param sheetName
 	 */
@@ -43,8 +42,7 @@ public class ExcelManager {
 	}
 
 	/***
-	 * Constructor
-	 * 
+	 * Constructor (Configuration with external excel file, select sheet based on index number)
 	 * @param excelFile
 	 * @param sheetIndex
 	 */
@@ -63,7 +61,7 @@ public class ExcelManager {
 	}
 
 	/***
-	 * 
+	 * Read Excel file from based on Row and Coulmn index number 
 	 * @param rowIndex
 	 * @param colIndex
 	 * @return String
@@ -115,7 +113,6 @@ public class ExcelManager {
 	}
 
 	/***
-	 * 
 	 * @param cell
 	 * @return String
 	 */
@@ -133,7 +130,6 @@ public class ExcelManager {
 
 	/***
 	 * Automatically handle older version of excel and new version
-	 * 
 	 * @param fis
 	 * @param excelFilePath
 	 * @return Workbook
@@ -155,11 +151,9 @@ public class ExcelManager {
 		return workbook;
 	}
 	
-	public static void main(String[] args) {	
-		
+	public static void main(String[] args) {		
 		ExcelManager exceUtil2 = new ExcelManager("src/test/resources/testData/"
-				+ "CalculaterTestData2.xls", 0);
-		
+				+ "CalculaterTestData2.xls", 0);	
 		logger.info("Excel data 2 --------");
 		logger.info(exceUtil2.getExcelAllData());		
 				

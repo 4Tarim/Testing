@@ -17,10 +17,7 @@ public class MortgageCalculatorDataDrivenTest extends Base {
 	private int testCounter = 0;
 	private String excelFile = "src/test/resources/testData/"
 			+ "CalculaterTestData2.xls";
-	/***
-	 * Read the Excel file using Apache POI 
-	 * @return data
-	 */
+
 	@DataProvider(name = "MortgageTestDataSet1")
 	private Object[][] calculatorData(){
 		Object[][] data = null;
@@ -28,20 +25,7 @@ public class MortgageCalculatorDataDrivenTest extends Base {
 		data = excelUtil.getExcelAllData();
 		return data;
 	}
-	/***
-	 * We will pass the Excel data to Mortgage Calculator test below 
-	 * @param amount
-	 * @param Myear
-	 * @param Mmonth
-	 * @param intYear
-	 * @param intMonth
-	 * @param intType
-	 * @param intRate
-	 * @param startMonth
-	 * @param startYear
-	 * @param paymentPeriod
-	 * @param expectedResult
-	 */
+
 	@Test(dataProvider = "MortgageTestDataSet1" )
 	public void dataDrivenTests(String amount, String Myear, String Mmonth,
 			String intYear, String intMonth, String intType, String intRate,
