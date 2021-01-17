@@ -40,7 +40,6 @@ public class ResultPage extends Base {
 	 */
 	public String getMonthlyPayment() {
 		String monthPaymentTxt = monthPayAmntElement.getAttribute("value");
-		logger.info("Monthly Payment: " + monthPaymentTxt);
 		return monthPaymentTxt;
 	}
 	
@@ -52,7 +51,6 @@ public class ResultPage extends Base {
 		WebElement totalInterestElement = driver.findElement(By.id("summaryInterest"));
 		selLibrary.highlightElement(totalInterestElement);
 		String totalInterestTxt = totalInterestElement.getAttribute("value");
-		logger.info("Total Interest is : " + totalInterestTxt);
 		return totalInterestTxt;
 	}
 	

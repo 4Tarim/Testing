@@ -25,11 +25,13 @@ public class HomePage extends Base {
 			String actualWebsiteTitle = driver.getTitle();
 			String expctedTitle = "Mortgage Calculator 2021 - FREE Calculator Tool (ZERO Ads)";
 			assertEquals(actualWebsiteTitle, expctedTitle);
-           // Find all links
+			
+			// Find all links
 			List<WebElement> links = driver.findElements(By.tagName("a"));
-
 			logger.info("Step1: goto mortgage calculator website !  " + " total links:  " + links.size());
+			
 		} catch (Exception e) {
+			
 			logger.error("Error", e);
 			assertTrue(true);
 		}

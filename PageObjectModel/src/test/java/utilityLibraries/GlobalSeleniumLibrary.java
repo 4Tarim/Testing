@@ -420,7 +420,6 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * Explicit wait for an element to be clickable
-	 * 
 	 * @param by
 	 * @return WebElement
 	 */
@@ -438,7 +437,6 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * Enter text to text after locate the WebElement
-	 * 
 	 * @param by
 	 * @param inputTxt
 	 */
@@ -465,7 +463,6 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * Click button
-	 * 
 	 * @param by
 	 */
 	public void clickElement(By by) {
@@ -501,7 +498,6 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * Custom wait, time unit is second
-	 * 
 	 * @param inSeconds
 	 */
 	public void customWait(double inSeconds) {
@@ -515,7 +511,6 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * Method returns current timestamp
-	 * 
 	 * @return String
 	 */
 	public String getCurrentTime() {
@@ -536,7 +531,6 @@ public class GlobalSeleniumLibrary {
 	/***
 	 * This method return total number of iframe if they exist, if not it will
 	 * return zero
-	 * 
 	 * @return int
 	 */
 	public int getAlliframes() {
@@ -563,7 +557,6 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * This method is handling switch browser.
-	 * 
 	 * @param index
 	 * @return
 	 */
@@ -644,7 +637,6 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * This method handles the checkbox
-	 * 
 	 * @param by
 	 * @param isCheck
 	 */
@@ -695,7 +687,6 @@ public class GlobalSeleniumLibrary {
 	/***
 	 * this method capture the screen shot when we use it in the test, data format
 	 * is .png, stored in screenshots folder
-	 * 
 	 * @param screnshotFileName
 	 * @param filePath
 	 */
@@ -725,7 +716,6 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * This method check the directory and if no exists, create input path.
-	 * 
 	 * @param inputPath
 	 */
 	private void checkDirectory(String inputPath) {
@@ -748,7 +738,6 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * This method get Absolute path
-	 * 
 	 * @param inputPath
 	 * @return
 	 */
@@ -767,7 +756,6 @@ public class GlobalSeleniumLibrary {
 	/***
 	 * This will capture screen shot at the break point and auto attach email sender
 	 * auto send email to team with reports together.
-	 * 
 	 * @return
 	 */
 	public List<String> autoAttachErrorImgToEmail() {
@@ -812,7 +800,6 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * this method is uploading a file
-	 * 
 	 * @param filePath
 	 * @param by
 	 */
