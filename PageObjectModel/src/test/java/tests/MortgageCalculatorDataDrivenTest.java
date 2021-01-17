@@ -53,9 +53,7 @@ public class MortgageCalculatorDataDrivenTest extends Base {
 		String monthlyPayment = calResultPage.getMonthlyPayment();
 		logger.info("Test Scenario: "+ testCounter + ", Monthly payment amount is:"
 				+ monthlyPayment + ", Expected: [" + expectedResult + "]");
-		
-		assertEquals(monthlyPayment, expectedResult);
-		
+		assertEquals(monthlyPayment, expectedResult);	
 		} catch (Exception e) {
 			logger.error("Error: ", e);
 			assertTrue(false);
