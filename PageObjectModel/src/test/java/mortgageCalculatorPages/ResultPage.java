@@ -14,6 +14,9 @@ public class ResultPage extends Base {
 	private WebElement monthPayAmntElement = null;
 	
 	String totalSummaryTxt;
+	String monthPaymentTxt;
+	String totalInterestTxt;
+	
 	
 	/***
 	 * waiting calculation finsh and get the final result of Monthly Payments
@@ -31,7 +34,7 @@ public class ResultPage extends Base {
 		}
 	}
 	
-	/****4
+	/****
 	 * use getAttribute method to get Monthly Paymet amount value from monthly Payment Box
 	 * @return
 	 */

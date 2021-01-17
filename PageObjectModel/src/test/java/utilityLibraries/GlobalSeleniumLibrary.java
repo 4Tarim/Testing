@@ -38,6 +38,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.google.common.io.Files;
 
+
 /***
  * This class have all Selenium/WebDriver related wrapper methods and features.
  * @author Administrator Created on 10/01/2021
@@ -263,7 +264,6 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * This method starts/launch a Firefox Browser
-	 * 
 	 * @return WebDriver
 	 */
 	private WebDriver startFirefoxBrowser() {
@@ -284,7 +284,6 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * This method starts/launch a IE Browser
-	 * 
 	 * @return WebDriver
 	 */
 	private WebDriver startIEBrowser() {
@@ -307,7 +306,6 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * This method starts/launch a Edge Browser
-	 * 
 	 * @return WebDriver
 	 */
 	private WebDriver startEdgeBrowser() {
@@ -326,7 +324,6 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * This method scroll the scroll bar until element is present
-	 * 
 	 * @param element
 	 */
 	public void scrollToElement(WebElement element) {
@@ -341,7 +338,6 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * This methos scroll down and we will give pixel value
-	 * 
 	 * @param pixels
 	 */
 	public void scrollUpDown(int pixels) {
@@ -367,7 +363,6 @@ public class GlobalSeleniumLibrary {
 	/***
 	 * This method highlight the Webelements, advantage is provide good vision on
 	 * the presentation
-	 * 
 	 * @param element
 	 */
 	public void highlightElement(WebElement element) {
@@ -391,7 +386,6 @@ public class GlobalSeleniumLibrary {
 	/***
 	 * This method is Explicit wait ( wait until WebElement is visible, time unit is
 	 * second)
-	 * 
 	 * @param by
 	 * @return
 	 */
@@ -409,7 +403,6 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * Explicit wait for an element to be present
-	 * 
 	 * @param by
 	 * @return WebElement
 	 */
