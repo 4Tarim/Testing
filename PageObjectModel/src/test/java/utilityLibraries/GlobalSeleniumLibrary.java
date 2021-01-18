@@ -371,12 +371,12 @@ public class GlobalSeleniumLibrary {
 	 * @param element
 	 */
 	public void highlightElement(WebElement element) {
-		if (isDemoMode == true) {
+		if (isDemoMode == false) {
 			try {
 				for (int i = 0; i < 4; i++) {
 					JavascriptExecutor js = (JavascriptExecutor) driver;
 					js.executeScript("arguments[0].setAttribute('style', arguments[1]);", element,
-							"color: red; border: 2px solid yellow");
+							"color: red; border: 3px solid yellow");
 					customWait(0.5);
 					js.executeScript("arguments[0].setAttribute('style', arguments[1]);", element, "");
 					customWait(0.5);
