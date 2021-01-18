@@ -1,7 +1,6 @@
 package utilityLibraries;
 
 import static org.testng.Assert.assertTrue;
-
 import java.io.File;
 import java.net.URL;
 import java.sql.Timestamp;

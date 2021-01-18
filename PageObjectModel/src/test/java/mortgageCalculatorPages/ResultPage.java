@@ -65,6 +65,7 @@ public class ResultPage extends Base {
 			String totalSummaryTxt = totalSummaryPayment.getAttribute("value");
 			selLibrary.waitForElementVisibility(By.id("summaryTotal"));
 			logger.info("Total Summary Payment is: " + totalSummaryTxt);
+			Thread.sleep(2*1000);
 			selLibrary.captureScreenshot("totalSummary","target/ScreenShots/");	
 		} catch (Exception e) {
 			logger.error("Error", e);
