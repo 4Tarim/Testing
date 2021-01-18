@@ -38,9 +38,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.google.common.io.Files;
 
-
 /***
  * This class have all Selenium/WebDriver related wrapper methods and features.
+ * 
  * @author Administrator Created on 10/01/2021
  */
 public class GlobalSeleniumLibrary {
@@ -264,6 +264,7 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * This method starts/launch a Firefox Browser
+	 * 
 	 * @return WebDriver
 	 */
 	private WebDriver startFirefoxBrowser() {
@@ -284,6 +285,7 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * This method starts/launch a IE Browser
+	 * 
 	 * @return WebDriver
 	 */
 	private WebDriver startIEBrowser() {
@@ -294,7 +296,8 @@ public class GlobalSeleniumLibrary {
 			System.setProperty("webdriver.ie.driver", "src/test/resources/drivers/IEDriverServer.exe");
 			driver = new InternetExplorerDriver(IEOps);
 			// resetting the IE zoom to 100%
-			//driver.findElement(By.tagName("body")).sendKeys(Keys.chord(Keys.CONTROL, "0"));
+			// driver.findElement(By.tagName("body")).sendKeys(Keys.chord(Keys.CONTROL,
+			// "0"));
 
 		} catch (Exception e) {
 			logger.error("Error: ", e);
@@ -303,9 +306,9 @@ public class GlobalSeleniumLibrary {
 		return driver;
 	}
 
-
 	/***
 	 * This method starts/launch a Edge Browser
+	 * 
 	 * @return WebDriver
 	 */
 	private WebDriver startEdgeBrowser() {
@@ -313,7 +316,7 @@ public class GlobalSeleniumLibrary {
 			EdgeOptions edgeOps = new EdgeOptions();
 			System.setProperty("webdriver.edge.driver", "src/test/resources/drivers/msedgedriver.exe");
 			driver = new EdgeDriver();
-			
+
 			driver = new EdgeDriver(edgeOps);
 		} catch (Exception e) {
 			logger.error("Error: ", e);
@@ -324,6 +327,7 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * This method scroll the scroll bar until element is present
+	 * 
 	 * @param element
 	 */
 	public void scrollToElement(WebElement element) {
@@ -338,6 +342,7 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * This methos scroll down and we will give pixel value
+	 * 
 	 * @param pixels
 	 */
 	public void scrollUpDown(int pixels) {
@@ -363,6 +368,7 @@ public class GlobalSeleniumLibrary {
 	/***
 	 * This method highlight the Webelements, advantage is provide good vision on
 	 * the presentation
+	 * 
 	 * @param element
 	 */
 	public void highlightElement(WebElement element) {
@@ -386,6 +392,7 @@ public class GlobalSeleniumLibrary {
 	/***
 	 * This method is Explicit wait ( wait until WebElement is visible, time unit is
 	 * second)
+	 * 
 	 * @param by
 	 * @return
 	 */
@@ -403,6 +410,7 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * Explicit wait for an element to be present
+	 * 
 	 * @param by
 	 * @return WebElement
 	 */
@@ -420,6 +428,7 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * Explicit wait for an element to be clickable
+	 * 
 	 * @param by
 	 * @return WebElement
 	 */
@@ -437,6 +446,7 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * Enter text to text after locate the WebElement
+	 * 
 	 * @param by
 	 * @param inputTxt
 	 */
@@ -463,6 +473,7 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * Click button
+	 * 
 	 * @param by
 	 */
 	public void clickElement(By by) {
@@ -498,6 +509,7 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * Custom wait, time unit is second
+	 * 
 	 * @param inSeconds
 	 */
 	public void customWait(double inSeconds) {
@@ -511,6 +523,7 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * Method returns current timestamp
+	 * 
 	 * @return String
 	 */
 	public String getCurrentTime() {
@@ -531,6 +544,7 @@ public class GlobalSeleniumLibrary {
 	/***
 	 * This method return total number of iframe if they exist, if not it will
 	 * return zero
+	 * 
 	 * @return int
 	 */
 	public int getAlliframes() {
@@ -557,6 +571,7 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * This method is handling switch browser.
+	 * 
 	 * @param index
 	 * @return
 	 */
@@ -637,6 +652,7 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * This method handles the checkbox
+	 * 
 	 * @param by
 	 * @param isCheck
 	 */
@@ -687,6 +703,7 @@ public class GlobalSeleniumLibrary {
 	/***
 	 * this method capture the screen shot when we use it in the test, data format
 	 * is .png, stored in screenshots folder
+	 * 
 	 * @param screnshotFileName
 	 * @param filePath
 	 */
@@ -716,6 +733,7 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * This method check the directory and if no exists, create input path.
+	 * 
 	 * @param inputPath
 	 */
 	private void checkDirectory(String inputPath) {
@@ -738,6 +756,7 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * This method get Absolute path
+	 * 
 	 * @param inputPath
 	 * @return
 	 */
@@ -756,6 +775,7 @@ public class GlobalSeleniumLibrary {
 	/***
 	 * This will capture screen shot at the break point and auto attach email sender
 	 * auto send email to team with reports together.
+	 * 
 	 * @return
 	 */
 	public List<String> autoAttachErrorImgToEmail() {
@@ -764,8 +784,6 @@ public class GlobalSeleniumLibrary {
 			JavaPropertiesManager sessionTimeProp = new JavaPropertiesManager(
 					"src/test/resources/sessionConfig.properties/");
 			String startTimeStamp = sessionTimeProp.readProperty("sessionTime");
-			// String imgTimeStamp = null;
-			// long testStatTime = Long.parseLong(startTimeStamp);
 			File file = new File("target/screenshots/");
 			if (file.isDirectory()) {
 				if (file.list().length > 0) {
@@ -774,12 +792,9 @@ public class GlobalSeleniumLibrary {
 						// checking if file is a file, not a folder
 						if (screenShotFiles[i].isFile()) {
 							String eachFileName = screenShotFiles[i].getName();
-							// logger.info("Image file name: " + eachFileName);
 							int indexOfUnderScore = eachFileName.lastIndexOf("_");
 							int indexOfLast = eachFileName.length() - 4;
 							String imgTemTimeStamp = eachFileName.substring(indexOfUnderScore + 1, indexOfLast);
-							// logger.info("data of image time stamps....___________");
-							// logger.info(imgTemTimeStamp);
 							long actualStartTimeStamp = Long.parseLong(startTimeStamp.substring(0, 14));
 							long actualImgTimeStamp = Long.parseLong(imgTemTimeStamp.substring(0, 14));
 							if (actualImgTimeStamp > actualStartTimeStamp) {
@@ -800,6 +815,7 @@ public class GlobalSeleniumLibrary {
 
 	/***
 	 * this method is uploading a file
+	 * 
 	 * @param filePath
 	 * @param by
 	 */
@@ -830,15 +846,9 @@ public class GlobalSeleniumLibrary {
 			if (isBrowserTypeFirefox == true) {
 				// driver.quit();
 			} else {
-				// driver.quit();
+				driver.quit();
 			}
 		}
 	}
-/*
-	public static void main(String[] args) {
-		GlobalSeleniumLibrary myObject = new GlobalSeleniumLibrary();
-		myObject.autoAttachErrorImgToEmail();*/
 
-	}
-
-
+}
