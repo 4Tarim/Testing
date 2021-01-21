@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-18T12:14:31 CET" name="Default suite" finished-at="2021-01-18T12:19:12 CET" duration-ms="281182">
+  <suite started-at="2021-01-21T10:09:02 CET" name="Default suite" finished-at="2021-01-21T10:13:47 CET" duration-ms="285202">
     <groups>
     </groups>
-    <test started-at="2021-01-18T12:14:31 CET" name="Default test" finished-at="2021-01-18T12:19:12 CET" duration-ms="281182">
+    <test started-at="2021-01-21T10:09:02 CET" name="Default test" finished-at="2021-01-21T10:13:47 CET" duration-ms="285202">
       <class name="tests.MortgageCalculatorDataDrivenTest">
-        <test-method is-config="true" signature="beforeAllTests()[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@268f106e]" started-at="2021-01-18T12:14:31 CET" name="beforeAllTests" finished-at="2021-01-18T12:14:31 CET" duration-ms="22" status="PASS">
+        <test-method is-config="true" signature="beforeAllTests()[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@268f106e]" started-at="2021-01-21T10:09:02 CET" name="beforeAllTests" finished-at="2021-01-21T10:09:02 CET" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeAllTests -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@268f106e]" started-at="2021-01-18T12:14:31 CET" name="setup" finished-at="2021-01-18T12:14:38 CET" duration-ms="6641" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@268f106e]" started-at="2021-01-21T10:09:02 CET" name="setup" finished-at="2021-01-21T10:09:08 CET" duration-ms="6455" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="dataDrivenTests(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@268f106e]" started-at="2021-01-18T12:14:38 CET" name="dataDrivenTests" data-provider="MortgageTestDataSet1" finished-at="2021-01-18T12:15:36 CET" duration-ms="58108" status="PASS">
+        <test-method signature="dataDrivenTests(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@268f106e]" started-at="2021-01-21T10:09:08 CET" name="dataDrivenTests" data-provider="MortgageTestDataSet1" finished-at="2021-01-21T10:10:10 CET" duration-ms="61306" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -76,7 +76,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataDrivenTests -->
-        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@268f106e]" started-at="2021-01-18T12:15:36 CET" name="close" finished-at="2021-01-18T12:15:42 CET" duration-ms="5692" status="PASS">
+        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@268f106e]" started-at="2021-01-21T10:10:10 CET" name="close" finished-at="2021-01-21T10:10:15 CET" duration-ms="5578" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -87,11 +87,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@268f106e]" started-at="2021-01-18T12:15:42 CET" name="setup" finished-at="2021-01-18T12:15:47 CET" duration-ms="5317" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@268f106e]" started-at="2021-01-21T10:10:15 CET" name="setup" finished-at="2021-01-21T10:10:21 CET" duration-ms="5239" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="dataDrivenTests(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@268f106e]" started-at="2021-01-18T12:15:47 CET" name="dataDrivenTests" data-provider="MortgageTestDataSet1" finished-at="2021-01-18T12:16:46 CET" duration-ms="58356" status="PASS">
+        <test-method signature="dataDrivenTests(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@268f106e]" started-at="2021-01-21T10:10:21 CET" name="dataDrivenTests" data-provider="MortgageTestDataSet1" finished-at="2021-01-21T10:11:20 CET" duration-ms="59038" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -152,7 +152,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataDrivenTests -->
-        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@268f106e]" started-at="2021-01-18T12:16:46 CET" name="close" finished-at="2021-01-18T12:16:51 CET" duration-ms="5725" status="PASS">
+        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@268f106e]" started-at="2021-01-21T10:11:20 CET" name="close" finished-at="2021-01-21T10:11:25 CET" duration-ms="5576" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -163,11 +163,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@268f106e]" started-at="2021-01-18T12:16:51 CET" name="setup" finished-at="2021-01-18T12:16:57 CET" duration-ms="5375" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@268f106e]" started-at="2021-01-21T10:11:25 CET" name="setup" finished-at="2021-01-21T10:11:30 CET" duration-ms="5211" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="dataDrivenTests(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@268f106e]" started-at="2021-01-18T12:16:57 CET" name="dataDrivenTests" data-provider="MortgageTestDataSet1" finished-at="2021-01-18T12:17:55 CET" duration-ms="57944" status="PASS">
+        <test-method signature="dataDrivenTests(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@268f106e]" started-at="2021-01-21T10:11:30 CET" name="dataDrivenTests" data-provider="MortgageTestDataSet1" finished-at="2021-01-21T10:12:29 CET" duration-ms="58594" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -228,7 +228,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataDrivenTests -->
-        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@268f106e]" started-at="2021-01-18T12:17:55 CET" name="close" finished-at="2021-01-18T12:18:00 CET" duration-ms="5696" status="PASS">
+        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@268f106e]" started-at="2021-01-21T10:12:29 CET" name="close" finished-at="2021-01-21T10:12:35 CET" duration-ms="5577" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -239,11 +239,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@268f106e]" started-at="2021-01-18T12:18:00 CET" name="setup" finished-at="2021-01-18T12:18:06 CET" duration-ms="5676" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@268f106e]" started-at="2021-01-21T10:12:35 CET" name="setup" finished-at="2021-01-21T10:12:40 CET" duration-ms="5218" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="dataDrivenTests(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@268f106e]" started-at="2021-01-18T12:18:06 CET" name="dataDrivenTests" data-provider="MortgageTestDataSet1" finished-at="2021-01-18T12:19:04 CET" duration-ms="57953" status="PASS">
+        <test-method signature="dataDrivenTests(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@268f106e]" started-at="2021-01-21T10:12:40 CET" name="dataDrivenTests" data-provider="MortgageTestDataSet1" finished-at="2021-01-21T10:13:39 CET" duration-ms="59073" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -304,7 +304,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataDrivenTests -->
-        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@268f106e]" started-at="2021-01-18T12:19:04 CET" name="close" finished-at="2021-01-18T12:19:10 CET" duration-ms="5686" status="PASS">
+        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@268f106e]" started-at="2021-01-21T10:13:39 CET" name="close" finished-at="2021-01-21T10:13:44 CET" duration-ms="5610" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -315,7 +315,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="afterAllTests()[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@268f106e]" started-at="2021-01-18T12:19:10 CET" name="afterAllTests" finished-at="2021-01-18T12:19:12 CET" duration-ms="2643" status="PASS">
+        <test-method is-config="true" signature="afterAllTests()[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@268f106e]" started-at="2021-01-21T10:13:44 CET" name="afterAllTests" finished-at="2021-01-21T10:13:47 CET" duration-ms="2346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterAllTests -->

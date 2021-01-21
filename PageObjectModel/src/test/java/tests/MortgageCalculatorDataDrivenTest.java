@@ -4,6 +4,7 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import org.apache.log4j.Logger;
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -54,6 +55,7 @@ public class MortgageCalculatorDataDrivenTest extends Base {
 		logger.info("Test Scenario: "+ testCounter + ", Monthly payment amount is:"
 				+ monthlyPayment + ", Expected: [" + expectedResult + "]");
 		assertEquals(monthlyPayment, expectedResult);	
+
 		} catch (Exception e) {
 			logger.error("Error: ", e);
 			assertTrue(false);

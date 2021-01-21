@@ -4,6 +4,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.util.Iterator;
 
 import org.apache.log4j.Logger;
@@ -13,6 +14,9 @@ import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelManager {
@@ -21,6 +25,11 @@ public class ExcelManager {
 	private static String filePath;
 	private static Workbook wb;
 	private static Sheet sh;
+	private static String file;
+	private static XSSFSheet excelSheet;
+	private static XSSFWorkbook excelWBook;
+	private static XSSFCell cell;
+	private static XSSFRow row;
 
 	/***
 	 * Constructor (Configuration with external excel file)
@@ -150,6 +159,39 @@ public class ExcelManager {
 		}
 		return workbook;
 	}
+	
+	
+	/***
+	 * Write to excel 
+	 * @param inputData
+	 * @param rowNum
+	 * @param colNum
+	 */
+	public static void setCellData(String inputData, int rowNum, int colNum) {
+		FileOutputStream fileOut = null;
+		try {
+			row = excelSheet.createRow(rowNum);
+			cell = row.getCell(colNum);
+			if (cell == null) {
+				cell = row.createCell(colNum);
+				cell.setCellValue(inputData);
+				fileOut = new FileOutputStream(file);
+				excelWBook.write(fileOut);
+			}
+		} catch (Exception e) {
+			logger.error("Error: ", e);
+		} finally {
+			try {
+				fileOut.flush();
+				fileOut.close();
+			} catch (Exception e) {
+				logger.error("Error: ", e);
+			}
+		}
+	}
+	
+	
+	
 	
 	public static void main(String[] args) {		
 		ExcelManager exceUtil2 = new ExcelManager("src/test/resources/testData/"
