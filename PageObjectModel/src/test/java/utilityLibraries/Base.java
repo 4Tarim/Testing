@@ -25,7 +25,6 @@ public class Base {
 	/***
 	 * before all tests start, this method runs only 1 time
 	 */
-
 	@BeforeClass
 	public void beforeAllTests() {
 		selLibrary = new GlobalSeleniumLibrary();
@@ -60,7 +59,6 @@ public class Base {
 	 * This method runs only 1 time after all tests are completed. in this methos
 	 * also atatch all selenium reports and ErrorImg send to Team email.
 	 */
-
 	@AfterClass
 	public void afterAllTests() {
 		logger.info("All the tests are completed...");
@@ -70,7 +68,7 @@ public class Base {
 		if (isSendEmail.toLowerCase().contains("on")) {
 			// Sending emails...
 			EmailManager email = new EmailManager();
-			email.toAddress = "selenium.jenkins.email@gmail.com;selenium.jenkins.report@gmail.com";
+			email.toAddress = "selenium.jenkins.email@gmail.com";
 			email.ccAddress = "selenium.jenkins.report@gmail.com";
 			selLibrary.autoAttachErrorImgToEmail();
 			selLibrary.errorScreenshots.add("target/logs/log4j-selenium.log");
