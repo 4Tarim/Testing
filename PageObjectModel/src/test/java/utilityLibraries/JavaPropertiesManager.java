@@ -91,16 +91,5 @@ public class JavaPropertiesManager {
 			}
 		}
 	}
-	
-	public static void main(String[] args) {
-		//JavaPropertiesManager property = new JavaPropertiesManager("src/test/resources/log4j.properties");
-		//String data = property.readProperty("log4j.appender.HTML.File");
-		//logger.info("data: " + data);
-		
-		//JavaPropertiesManager property = new JavaPropertiesManager("src/test/resources/config.properties");
-		//property.setProperty("browserType", "FireFox");
-		//property.setProperty("demoMode", "false", "Demo mode true enables highlighting WebElement and slows down the test execution.");
-		
-	}
 
 }
