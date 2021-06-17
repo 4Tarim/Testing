@@ -86,6 +86,7 @@ public class EmailManager {
 					multipart.addBodyPart(attachPart);
 				}
 			}
+			
 			logger.info("Step2> Attaching report files & error screenshots...");
 			msg.setContent(multipart);
 

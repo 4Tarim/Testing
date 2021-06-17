@@ -9,6 +9,7 @@ import java.util.Properties;
 import org.apache.log4j.Logger;
 
 public class JavaPropertiesManager {
+	
 	final static Logger logger = Logger.getLogger(JavaPropertiesManager.class);
 	private String propertiesFile;
 	private Properties prop;

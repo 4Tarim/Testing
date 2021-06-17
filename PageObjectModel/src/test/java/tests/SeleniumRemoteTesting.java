@@ -27,7 +27,6 @@ public class SeleniumRemoteTesting {
 			driver.get(websiteUrl);
 			Thread.sleep(10*1000);
 			
-			
 			driver.close();
 			driver.quit();
 		} catch (Exception e) {

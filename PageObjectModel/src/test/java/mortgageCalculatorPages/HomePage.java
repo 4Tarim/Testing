@@ -12,6 +12,7 @@ import org.openqa.selenium.WebElement;
 import utilityLibraries.Base;
 
 public class HomePage extends Base {
+	
 	// copy from the base library
 	final static Logger logger = Logger.getLogger(HomePage.class);
 

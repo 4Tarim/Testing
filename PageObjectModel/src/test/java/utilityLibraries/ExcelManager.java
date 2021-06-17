@@ -160,7 +160,6 @@ public class ExcelManager {
 		return workbook;
 	}
 	
-	
 	/***
 	 * Write to excel 
 	 * @param inputData

@@ -39,7 +39,6 @@ import com.google.common.io.Files;
 
 /***
  * This class have all Selenium/WebDriver related wrapper methods and features.
- * 
  * @author Administrator Created on 15/01/2021
  */
 public class GlobalSeleniumLibrary {

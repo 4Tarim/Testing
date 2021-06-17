@@ -20,7 +20,6 @@ public class RemoteTests {
 			ChromeOptions op = new ChromeOptions();
 			// FirefoxOptions op = new FirefoxOptions();
 			// InternetExplorerOptions op = new InternetExplorerOptions();
-
 			// op.setHeadless(true);
 			op.merge(cap);
 			driver = new RemoteWebDriver(new URL(nodeURL), op);

@@ -7,7 +7,6 @@ import utilityLibraries.Base;
 
 public class FileUploadTests extends Base {
 
-	
 	@Test
 	public void fileUploadTest1() {
 		driver.get("https://html.com/input-type-file/");

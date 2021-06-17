@@ -36,7 +36,6 @@ public class ResultPage extends Base {
 	/****
 	 * use getAttribute method to get Monthly Paymet amount value from monthly
 	 * Payment Box
-	 * 
 	 * @return
 	 */
 	public String getMonthlyPayment() {
@@ -47,7 +46,6 @@ public class ResultPage extends Base {
 	/***
 	 * Locate the Total Interest result box and highlight, get the value, print
 	 * using Apache Log4J
-	 * 
 	 * @return
 	 */
 	public String getTotalInterest() {
@@ -60,7 +58,6 @@ public class ResultPage extends Base {
 	/***
 	 * Locate the total payment section and highlight, get the value using
 	 * getAttribute value method
-	 * 
 	 * @return
 	 */
 	public String getTotalPayment() {

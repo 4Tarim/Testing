@@ -50,6 +50,7 @@ public class MortgageCalculatorDataDrivenTest extends Base {
 		.selectPaymentPeriod(paymentPeriod)
 		.clickCalculateButton();
 		
+		
 		ResultPage calResultPage = new ResultPage();
 		String monthlyPayment = calResultPage.getMonthlyPayment();
 		logger.info("Test Scenario: "+ testCounter + ", Monthly payment amount is:"

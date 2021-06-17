@@ -118,7 +118,6 @@ public class Base {
 	/***
 	 * after each test is completed, cleaning up - close the browser capture
 	 * screenshots only if there is test failure.
-	 * 
 	 * @param result
 	 */
 	@AfterMethod
