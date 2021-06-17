@@ -17,7 +17,7 @@ public class MortgageCalculatorDataDrivenTest extends Base {
 	final static Logger logger = Logger.getLogger(MortgageCalculatorDataDrivenTest.class);
 	private int testCounter = 0;
 	private String excelFile = "src/test/resources/testData/"
-			+ "CalculaterTestData2.xls";
+			+ "CalculaterTestData.xls";
 
 	@DataProvider(name = "MortgageTestDataSet1")
 	private Object[][] calculatorData(){
