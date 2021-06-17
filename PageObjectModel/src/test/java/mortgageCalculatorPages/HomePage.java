@@ -179,6 +179,7 @@ public class HomePage extends Base {
 	 */
 	public HomePage clickCalculateButton() {
 		WebElement CalculateButton = driver.findElement(By.id("button"));
+		selLibrary.scrollToElement(CalculateButton);
 		selLibrary.highlightElement(CalculateButton);
 		selLibrary.waitForElementToBeClickable(By.id("button"));
 		selLibrary.clickElement(By.id("button"));

@@ -79,19 +79,4 @@ public class ResultPage extends Base {
 		return totalSummaryTxt;
 	}
 
-	/***
-	 * Scroll down to MortgaePayment Table and take screenshot for report
-	 */
-	public void captureScreenshotMortgagePaymentTable() {
-		try {
-			WebElement mortgaePaymentTable = driver.findElement(By.cssSelector(
-					"#mortgage > div.calcHolder.flexContainer.mortgage > div.mortageTableWrapper > table"));
-			selLibrary.highlightElement(mortgaePaymentTable);
-			Thread.sleep(3 * 1000);
-			selLibrary.captureScreenshot("Mortgage Payment Table", "target/ScreenShots/");
-		} catch (Exception e) {
-			logger.error("Error", e);
-			assertTrue(false);
-		}
-	}
 }

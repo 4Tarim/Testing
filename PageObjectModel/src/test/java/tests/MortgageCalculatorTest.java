@@ -39,8 +39,6 @@ public class MortgageCalculatorTest extends Base {
 		logger.info("Total Interest is:  " + getTotalInterest);
 		String TotalSummaryPayment = resultPage.getTotalPayment();
 		logger.info("Total SUmmary Payment: " + TotalSummaryPayment);
-		resultPage.captureScreenshotMortgagePaymentTable();
-		logger.info("mortgaePaymentTable ScreenShot is Captured and saved to target/ScreenShots/ ");
 		
 	}
 }
