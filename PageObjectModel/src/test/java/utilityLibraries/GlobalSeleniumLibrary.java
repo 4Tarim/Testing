@@ -340,31 +340,6 @@ public class GlobalSeleniumLibrary {
 	}
 
 	/***
-	 * This methos scroll down and we will give pixel value
-	 * 
-	 * @param pixels
-	 */
-	public void scrollUpDown(int pixels) {
-		try {
-			JavascriptExecutor js = (JavascriptExecutor) driver;
-			js.executeScript("scroll(0," + pixels + ")");
-		} catch (Exception e) {
-			logger.error("Error: ", e);
-			assertTrue(false);
-		}
-	}
-
-	public void scrollRightLeft(int pixels) {
-		try {
-			JavascriptExecutor js = (JavascriptExecutor) driver;
-			js.executeScript("scroll(" + pixels + ",0)");
-		} catch (Exception e) {
-			logger.error("Error: ", e);
-			assertTrue(false);
-		}
-	}
-
-	/***
 	 * This method highlight the Webelements, advantage is provide good vision on
 	 * the presentation
 	 * 

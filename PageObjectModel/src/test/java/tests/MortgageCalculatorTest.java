@@ -1,6 +1,7 @@
 package tests;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import mortgageCalculatorPages.HomePage;
@@ -37,7 +38,9 @@ public class MortgageCalculatorTest extends Base {
 		String getTotalInterest = resultPage.getTotalInterest();
 		logger.info("Total Interest is:  " + getTotalInterest);
 		String TotalSummaryPayment = resultPage.getTotalPayment();
-		logger.info("Total SUmmary Payment: " + TotalSummaryPayment);	
+		logger.info("Total SUmmary Payment: " + TotalSummaryPayment);
+		resultPage.captureScreenshotMortgagePaymentTable();
+		logger.info("mortgaePaymentTable ScreenShot is Captured and saved to target/ScreenShots/ ");
 		
 	}
 }

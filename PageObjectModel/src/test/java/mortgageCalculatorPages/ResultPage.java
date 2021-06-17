@@ -12,18 +12,17 @@ import utilityLibraries.Base;
 public class ResultPage extends Base {
 	final static Logger logger = Logger.getLogger(ResultPage.class);
 	private WebElement monthPayAmntElement = null;
-	
+
 	String totalSummaryTxt;
 	String monthPaymentTxt;
 	String totalInterestTxt;
-	
-	
+
 	/***
 	 * waiting calculation finsh and get the final result of Monthly Payments
 	 */
 	public ResultPage() {
 		try {
-			logger.info("Step 3: Page Synchronization -------------> to ResultPage");			
+			logger.info("Step 3: Page Synchronization -------------> to ResultPage");
 			monthPayAmntElement = selLibrary.waitForElementVisibility(By.id("summaryMonthly"));
 			selLibrary.highlightElement(monthPayAmntElement);
 			assertNotNull(monthPayAmntElement);
@@ -33,18 +32,22 @@ public class ResultPage extends Base {
 			assertTrue(false);
 		}
 	}
-	
+
 	/****
-	 * use getAttribute method to get Monthly Paymet amount value from monthly Payment Box
+	 * use getAttribute method to get Monthly Paymet amount value from monthly
+	 * Payment Box
+	 * 
 	 * @return
 	 */
 	public String getMonthlyPayment() {
 		String monthPaymentTxt = monthPayAmntElement.getAttribute("value");
 		return monthPaymentTxt;
 	}
-	
+
 	/***
-	 * Locate the Total Interest result box and highlight, get the value, print using Apache Log4J
+	 * Locate the Total Interest result box and highlight, get the value, print
+	 * using Apache Log4J
+	 * 
 	 * @return
 	 */
 	public String getTotalInterest() {
@@ -53,9 +56,11 @@ public class ResultPage extends Base {
 		String totalInterestTxt = totalInterestElement.getAttribute("value");
 		return totalInterestTxt;
 	}
-	
+
 	/***
-	 * Locate the total payment section and highlight, get the value using getAttribute value method
+	 * Locate the total payment section and highlight, get the value using
+	 * getAttribute value method
+	 * 
 	 * @return
 	 */
 	public String getTotalPayment() {
@@ -65,13 +70,28 @@ public class ResultPage extends Base {
 			String totalSummaryTxt = totalSummaryPayment.getAttribute("value");
 			selLibrary.waitForElementVisibility(By.id("summaryTotal"));
 			logger.info("Total Summary Payment is: " + totalSummaryTxt);
-			Thread.sleep(2*1000);
-			selLibrary.captureScreenshot("totalSummary","target/ScreenShots/");	
+			Thread.sleep(2 * 1000);
+			selLibrary.captureScreenshot("totalSummary", "target/ScreenShots/");
 		} catch (Exception e) {
 			logger.error("Error", e);
 			assertTrue(false);
 		}
 		return totalSummaryTxt;
 	}
-}
 
+	/***
+	 * Scroll down to MortgaePayment Table and take screenshot for report
+	 */
+	public void captureScreenshotMortgagePaymentTable() {
+		try {
+			WebElement mortgaePaymentTable = driver.findElement(By.cssSelector(
+					"#mortgage > div.calcHolder.flexContainer.mortgage > div.mortageTableWrapper > table"));
+			selLibrary.highlightElement(mortgaePaymentTable);
+			Thread.sleep(3 * 1000);
+			selLibrary.captureScreenshot("Mortgage Payment Table", "target/ScreenShots/");
+		} catch (Exception e) {
+			logger.error("Error", e);
+			assertTrue(false);
+		}
+	}
+}

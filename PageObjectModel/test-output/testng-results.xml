@@ -2,35 +2,35 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-27T19:10:18 CET" name="Default suite" finished-at="2021-01-27T19:11:41 CET" duration-ms="82189">
+  <suite started-at="2021-06-16T22:50:34 EDT" name="Default suite" finished-at="2021-06-16T22:52:04 EDT" duration-ms="90210">
     <groups>
     </groups>
-    <test started-at="2021-01-27T19:10:18 CET" name="Default test" finished-at="2021-01-27T19:11:41 CET" duration-ms="82189">
+    <test started-at="2021-06-16T22:50:34 EDT" name="Default test" finished-at="2021-06-16T22:52:04 EDT" duration-ms="90210">
       <class name="tests.MortgageCalculatorTest">
-        <test-method is-config="true" signature="beforeAllTests()[pri:0, instance:tests.MortgageCalculatorTest@1caa0244]" started-at="2021-01-27T19:10:18 CET" name="beforeAllTests" finished-at="2021-01-27T19:10:18 CET" duration-ms="30" status="PASS">
+        <test-method is-config="true" signature="beforeAllTests()[pri:0, instance:tests.MortgageCalculatorTest@14028087]" started-at="2021-06-16T22:50:34 EDT" name="beforeAllTests" finished-at="2021-06-16T22:50:34 EDT" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeAllTests -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.MortgageCalculatorTest@1caa0244]" started-at="2021-01-27T19:10:18 CET" name="setup" finished-at="2021-01-27T19:10:24 CET" duration-ms="5324" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.MortgageCalculatorTest@14028087]" started-at="2021-06-16T22:50:34 EDT" name="setup" finished-at="2021-06-16T22:50:37 EDT" duration-ms="3215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="buySinglehouse()[pri:0, instance:tests.MortgageCalculatorTest@1caa0244]" started-at="2021-01-27T19:10:24 CET" name="buySinglehouse" finished-at="2021-01-27T19:11:32 CET" duration-ms="68005" status="PASS">
+        <test-method signature="buySinglehouse()[pri:0, instance:tests.MortgageCalculatorTest@14028087]" started-at="2021-06-16T22:50:37 EDT" name="buySinglehouse" finished-at="2021-06-16T22:51:51 EDT" duration-ms="74171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- buySinglehouse -->
-        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:tests.MortgageCalculatorTest@1caa0244]" started-at="2021-01-27T19:11:32 CET" name="close" finished-at="2021-01-27T19:11:38 CET" duration-ms="5951" status="PASS">
+        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:tests.MortgageCalculatorTest@14028087]" started-at="2021-06-16T22:51:51 EDT" name="close" finished-at="2021-06-16T22:52:01 EDT" duration-ms="9690" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=buySinglehouse status=SUCCESS method=MortgageCalculatorTest.buySinglehouse()[pri:0, instance:tests.MortgageCalculatorTest@1caa0244] output={null}]]]>
+                <![CDATA[[TestResult name=buySinglehouse status=SUCCESS method=MortgageCalculatorTest.buySinglehouse()[pri:0, instance:tests.MortgageCalculatorTest@14028087] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="afterAllTests()[pri:0, instance:tests.MortgageCalculatorTest@1caa0244]" started-at="2021-01-27T19:11:38 CET" name="afterAllTests" finished-at="2021-01-27T19:11:41 CET" duration-ms="2844" status="PASS">
+        <test-method is-config="true" signature="afterAllTests()[pri:0, instance:tests.MortgageCalculatorTest@14028087]" started-at="2021-06-16T22:52:01 EDT" name="afterAllTests" finished-at="2021-06-16T22:52:04 EDT" duration-ms="3082" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterAllTests -->
