@@ -2,10 +2,12 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
-  
     <classes>
+      <class name="tests.SeleniumRemoteTesting"/>
+      <class name="tests.RemoteTests"/>
       <class name="tests.MortgageCalculatorTest"/>
+      <class name="tests.MortgageCalculatorDataDrivenTest"/>
+      <class name="tests.FileUploadTests"/>
     </classes>
-    
   </test> <!-- Test -->
 </suite> <!-- Suite -->

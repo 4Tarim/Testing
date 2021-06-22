@@ -1,8 +1,6 @@
 package tests;
 
-import org.testng.annotations.Test;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import mortgageCalculatorPages.HomePage;

@@ -123,6 +123,7 @@
 				<configuration>
 				<includes>
 				<include>MortgageCalculatorTest.java</include>
+				<include>MortgageCalculatorDataDrivenTest.java</include>
 				</includes>
 				</configuration>
 			</plugin>
