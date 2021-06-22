@@ -1,5 +1,7 @@
 package tests;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -55,11 +57,11 @@ public class MortgageCalculatorDataDrivenTest extends Base {
 		String monthlyPayment = calResultPage.getMonthlyPayment();
 		logger.info("Test Scenario: "+ testCounter + ", Monthly payment amount is:"
 				+ monthlyPayment + ", Expected: [" + expectedResult + "]");
-		assertEquals(monthlyPayment, expectedResult);	
+		AssertJUnit.assertEquals(monthlyPayment, expectedResult);	
 
 		} catch (Exception e) {
 			logger.error("Error: ", e);
-			assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 }
