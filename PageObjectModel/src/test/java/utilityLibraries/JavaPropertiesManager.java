@@ -92,5 +92,18 @@ public class JavaPropertiesManager {
 			}
 		}
 	}
+	
+	/*
+	 * Creating config.properties file
+	 * 
+	 * public static void main(String[] args) { JavaPropertiesManager property = new
+	 * JavaPropertiesManager("src/test/resources/config.properties");
+	 * property.setProperty("browserType", "FireFox");
+	 * property.setProperty("Demo Mode", "false",
+	 * "in the case demo mode is true:enables the highlighting the webelement and test execution will be slow down"
+	 * ); property.setProperty("", null);
+	 * 
+	 * }
+	 */
 
 }
