@@ -15,7 +15,7 @@ public class RemoteTests {
 		WebDriver driver = null;
 		try {
 			String baseURL = "http://www.google.com/";
-			String nodeURL = "http://172.31.13.184:4444/wd/hub";
+			String nodeURL = "http://10.0.0.238:4444/wd/hub";
 			DesiredCapabilities cap = new DesiredCapabilities();
 			ChromeOptions op = new ChromeOptions();
 			// FirefoxOptions op = new FirefoxOptions();

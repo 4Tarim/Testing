@@ -101,6 +101,19 @@
 			<version>3.0.0-M5</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+
+
 		<!-- https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc6 -->
 		<!-- <dependency> <groupId>com.oracle.database.jdbc</groupId> <artifactId>ojdbc6</artifactId> 
 			<version>11.2.0.4</version> </dependency> -->
@@ -121,10 +134,10 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M2</version>
 				<configuration>
-				<includes>
-				<include>MortgageCalculatorTest.java</include>
-				<include>MortgageCalculatorDataDrivenTest.java</include>
-				</includes>
+					<includes>
+						<include>MortgageCalculatorTest.java</include>
+						<include>MortgageCalculatorDataDrivenTest.java</include>
+					</includes>
 				</configuration>
 			</plugin>
 

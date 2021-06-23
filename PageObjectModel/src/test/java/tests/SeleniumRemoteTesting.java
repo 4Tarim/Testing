@@ -12,7 +12,7 @@ public class SeleniumRemoteTesting {
 	
 	WebDriver driver;
 	String websiteUrl ="https://www.google.com/";
-	String remoteHubUrl = "http://10.0.8.200:4444/wd/hub";
+	String remoteHubUrl = "http://10.0.0.238:4444/wd/hub";
 	
 	@Test
 	public void searchGoogleRemoteTest() {
@@ -20,11 +20,14 @@ public class SeleniumRemoteTesting {
 		try {
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			ChromeOptions chromeOps = new ChromeOptions();
-			chromeOps.setHeadless(true);
+			
+			// run tests in headless mode, in the background
+			chromeOps.setHeadless(false);
 			chromeOps.merge(capabilities);
 			
 			driver = new RemoteWebDriver(new URL(remoteHubUrl), chromeOps);
 			driver.get(websiteUrl);
+			
 			Thread.sleep(10*1000);
 			
 			driver.close();
