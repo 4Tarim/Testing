@@ -24,6 +24,7 @@ public class Base {
 
 	/***
 	 * before all tests start, this method runs only 1 time
+	 * start to read configuration file, the properties from config.properties file
 	 */
 	@BeforeClass
 	public void beforeAllTests() {
