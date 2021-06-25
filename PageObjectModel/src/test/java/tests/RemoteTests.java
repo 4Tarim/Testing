@@ -15,6 +15,7 @@ public class RemoteTests {
 		WebDriver driver = null;
 		
 		try {
+			
 			String baseURL = "http://www.google.com/";
 			String nodeURL = "http://10.0.0.238:4444/wd/hub";
 			DesiredCapabilities cap = new DesiredCapabilities();
@@ -26,6 +27,7 @@ public class RemoteTests {
 			driver = new RemoteWebDriver(new URL(nodeURL), op);
 			
 			driver.get(baseURL);
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
