@@ -6,8 +6,9 @@
 	<artifactId>PageObjectModel</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+
 	<dependencies>
-	
+
 		<!-- This is selenium maven dependency -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -130,8 +131,11 @@
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc6 -->
-		<!-- <dependency> <groupId>com.oracle.database.jdbc</groupId> <artifactId>ojdbc6</artifactId> 
-			<version>11.2.0.4</version> </dependency> -->
+		<dependency>
+			<groupId>com.oracle.database.jdbc</groupId>
+			<artifactId>ojdbc6</artifactId>
+			<version>11.2.0.4</version>
+		</dependency>
 
 	</dependencies>
 
