@@ -8,6 +8,7 @@
 
 	<dependencies>
 	
+	
 		<!-- This is selenium maven dependency -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
