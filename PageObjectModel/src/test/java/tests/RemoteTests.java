@@ -13,6 +13,7 @@ public class RemoteTests {
 	@Test
 	public void runRemoteTest() {
 		WebDriver driver = null;
+		
 		try {
 			String baseURL = "http://www.google.com/";
 			String nodeURL = "http://10.0.0.238:4444/wd/hub";
@@ -23,7 +24,7 @@ public class RemoteTests {
 			// op.setHeadless(true);
 			op.merge(cap);
 			driver = new RemoteWebDriver(new URL(nodeURL), op);
-
+			
 			driver.get(baseURL);
 		} catch (Exception e) {
 			e.printStackTrace();
