@@ -34,8 +34,6 @@ public class SeleniumRemoteTesting {
 			driver.quit();
 		} catch (Exception e) {
 			e.printStackTrace();
-		}
-		
+		}	
 	}
-
 }
