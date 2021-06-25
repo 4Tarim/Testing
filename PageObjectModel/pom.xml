@@ -7,8 +7,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<dependencies>
-	
-	
+		
 		<!-- This is selenium maven dependency -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -156,7 +155,6 @@
 					</includes>
 				</configuration>
 			</plugin>
-
 		</plugins>
 	</build>
 
