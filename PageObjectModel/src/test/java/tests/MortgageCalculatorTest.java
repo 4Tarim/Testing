@@ -30,7 +30,6 @@ public class MortgageCalculatorTest extends Base {
 		myHomePage.selectPaymentPeriod("Monthly");
 		myHomePage.clickCalculateButton();	
 		
-		
 		// ResultPage--- get MonthlyPayment, Total Interest, Total Payment 
 		ResultPage resultPage = new ResultPage();
 		String monthlyPayment = resultPage.getMonthlyPayment();
