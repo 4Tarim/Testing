@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-25T18:21:17 EDT" name="Default suite" finished-at="2021-06-25T18:22:37 EDT" duration-ms="80111">
+  <suite started-at="2021-06-25T18:36:39 EDT" name="Default suite" finished-at="2021-06-25T18:37:59 EDT" duration-ms="79559">
     <groups>
     </groups>
-    <test started-at="2021-06-25T18:21:17 EDT" name="Default test" finished-at="2021-06-25T18:22:37 EDT" duration-ms="80111">
+    <test started-at="2021-06-25T18:36:39 EDT" name="Default test" finished-at="2021-06-25T18:37:59 EDT" duration-ms="79559">
       <class name="tests.MortgageCalculatorTest">
-        <test-method is-config="true" signature="beforeAllTests()[pri:0, instance:tests.MortgageCalculatorTest@264f218]" started-at="2021-06-25T18:21:17 EDT" name="beforeAllTests" finished-at="2021-06-25T18:21:17 EDT" duration-ms="23" status="PASS">
+        <test-method is-config="true" signature="beforeAllTests()[pri:0, instance:tests.MortgageCalculatorTest@264f218]" started-at="2021-06-25T18:36:39 EDT" name="beforeAllTests" finished-at="2021-06-25T18:36:39 EDT" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeAllTests -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.MortgageCalculatorTest@264f218]" started-at="2021-06-25T18:21:17 EDT" name="setup" finished-at="2021-06-25T18:21:20 EDT" duration-ms="2701" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.MortgageCalculatorTest@264f218]" started-at="2021-06-25T18:36:39 EDT" name="setup" finished-at="2021-06-25T18:36:42 EDT" duration-ms="2639" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="buySinglehouse()[pri:0, instance:tests.MortgageCalculatorTest@264f218]" started-at="2021-06-25T18:21:20 EDT" name="buySinglehouse" finished-at="2021-06-25T18:22:29 EDT" duration-ms="68926" status="PASS">
+        <test-method signature="buySinglehouse()[pri:0, instance:tests.MortgageCalculatorTest@264f218]" started-at="2021-06-25T18:36:42 EDT" name="buySinglehouse" finished-at="2021-06-25T18:37:51 EDT" duration-ms="68942" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- buySinglehouse -->
-        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:tests.MortgageCalculatorTest@264f218]" started-at="2021-06-25T18:22:29 EDT" name="close" finished-at="2021-06-25T18:22:35 EDT" duration-ms="5649" status="PASS">
+        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:tests.MortgageCalculatorTest@264f218]" started-at="2021-06-25T18:37:51 EDT" name="close" finished-at="2021-06-25T18:37:56 EDT" duration-ms="5631" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,7 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="afterAllTests()[pri:0, instance:tests.MortgageCalculatorTest@264f218]" started-at="2021-06-25T18:22:35 EDT" name="afterAllTests" finished-at="2021-06-25T18:22:37 EDT" duration-ms="2770" status="PASS">
+        <test-method is-config="true" signature="afterAllTests()[pri:0, instance:tests.MortgageCalculatorTest@264f218]" started-at="2021-06-25T18:37:56 EDT" name="afterAllTests" finished-at="2021-06-25T18:37:59 EDT" duration-ms="2295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterAllTests -->
