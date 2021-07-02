@@ -1,40 +1,325 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-27T15:56:31 EDT" name="Default suite" finished-at="2021-06-27T15:57:52 EDT" duration-ms="80875">
+  <suite started-at="2021-07-02T13:00:55 EDT" name="Default suite" finished-at="2021-07-02T13:05:13 EDT" duration-ms="258441">
     <groups>
     </groups>
-    <test started-at="2021-06-27T15:56:31 EDT" name="Default test" finished-at="2021-06-27T15:57:52 EDT" duration-ms="80875">
-      <class name="tests.MortgageCalculatorTest">
-        <test-method is-config="true" signature="beforeAllTests()[pri:0, instance:tests.MortgageCalculatorTest@264f218]" started-at="2021-06-27T15:56:31 EDT" name="beforeAllTests" finished-at="2021-06-27T15:56:31 EDT" duration-ms="22" status="PASS">
+    <test started-at="2021-07-02T13:00:55 EDT" name="Default test" finished-at="2021-07-02T13:05:13 EDT" duration-ms="258441">
+      <class name="tests.MortgageCalculatorDataDrivenTest">
+        <test-method is-config="true" signature="beforeAllTests()[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@389b0789]" started-at="2021-07-02T13:00:55 EDT" name="beforeAllTests" finished-at="2021-07-02T13:00:55 EDT" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeAllTests -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.MortgageCalculatorTest@264f218]" started-at="2021-06-27T15:56:31 EDT" name="setup" finished-at="2021-06-27T15:56:34 EDT" duration-ms="2940" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@389b0789]" started-at="2021-07-02T13:00:55 EDT" name="setup" finished-at="2021-07-02T13:00:58 EDT" duration-ms="2615" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="buySinglehouse()[pri:0, instance:tests.MortgageCalculatorTest@264f218]" started-at="2021-06-27T15:56:34 EDT" name="buySinglehouse" finished-at="2021-06-27T15:57:44 EDT" duration-ms="69658" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- buySinglehouse -->
-        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:tests.MortgageCalculatorTest@264f218]" started-at="2021-06-27T15:57:44 EDT" name="close" finished-at="2021-06-27T15:57:50 EDT" duration-ms="5651" status="PASS">
+        <test-method signature="dataDrivenTests(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@389b0789]" started-at="2021-07-02T13:00:58 EDT" name="dataDrivenTests" data-provider="MortgageCalculatorTestData" finished-at="2021-07-02T13:01:56 EDT" duration-ms="58278" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=buySinglehouse status=SUCCESS method=MortgageCalculatorTest.buySinglehouse()[pri:0, instance:tests.MortgageCalculatorTest@264f218] output={null}]]]>
+                <![CDATA[500000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[29]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Fixed]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[4.75]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[2021]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Bi-Weekly]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[$2,608.24]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataDrivenTests -->
+        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@389b0789]" started-at="2021-07-02T13:01:56 EDT" name="close" finished-at="2021-07-02T13:02:02 EDT" duration-ms="5635" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=dataDrivenTests status=SUCCESS method=MortgageCalculatorDataDrivenTest.dataDrivenTests(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@389b0789] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="afterAllTests()[pri:0, instance:tests.MortgageCalculatorTest@264f218]" started-at="2021-06-27T15:57:50 EDT" name="afterAllTests" finished-at="2021-06-27T15:57:52 EDT" duration-ms="2540" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@389b0789]" started-at="2021-07-02T13:02:02 EDT" name="setup" finished-at="2021-07-02T13:02:03 EDT" duration-ms="1173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dataDrivenTests(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@389b0789]" started-at="2021-07-02T13:02:03 EDT" name="dataDrivenTests" data-provider="MortgageCalculatorTestData" finished-at="2021-07-02T13:02:59 EDT" duration-ms="55976" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[28]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Fixed]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[7.25]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[2022]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Monthly]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[$6,894.04]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataDrivenTests -->
+        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@389b0789]" started-at="2021-07-02T13:02:59 EDT" name="close" finished-at="2021-07-02T13:03:04 EDT" duration-ms="5653" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=dataDrivenTests status=SUCCESS method=MortgageCalculatorDataDrivenTest.dataDrivenTests(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@389b0789] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@389b0789]" started-at="2021-07-02T13:03:04 EDT" name="setup" finished-at="2021-07-02T13:03:06 EDT" duration-ms="1174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dataDrivenTests(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@389b0789]" started-at="2021-07-02T13:03:06 EDT" name="dataDrivenTests" data-provider="MortgageCalculatorTestData" finished-at="2021-07-02T13:04:02 EDT" duration-ms="56158" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2000000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[29]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Fixed]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[5.1]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[2023]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Bi-Weekly]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[$10,859.00]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataDrivenTests -->
+        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@389b0789]" started-at="2021-07-02T13:04:02 EDT" name="close" finished-at="2021-07-02T13:04:07 EDT" duration-ms="5647" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=dataDrivenTests status=SUCCESS method=MortgageCalculatorDataDrivenTest.dataDrivenTests(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@389b0789] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@389b0789]" started-at="2021-07-02T13:04:07 EDT" name="setup" finished-at="2021-07-02T13:04:09 EDT" duration-ms="1158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dataDrivenTests(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@389b0789]" started-at="2021-07-02T13:04:09 EDT" name="dataDrivenTests" data-provider="MortgageCalculatorTestData" finished-at="2021-07-02T13:05:04 EDT" duration-ms="55807" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[16]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Variable]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[2025]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Bi-Weekly]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[$81,763.56]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataDrivenTests -->
+        <test-method is-config="true" signature="close(org.testng.ITestResult)[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@389b0789]" started-at="2021-07-02T13:05:04 EDT" name="close" finished-at="2021-07-02T13:05:10 EDT" duration-ms="5651" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=dataDrivenTests status=SUCCESS method=MortgageCalculatorDataDrivenTest.dataDrivenTests(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@389b0789] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="afterAllTests()[pri:0, instance:tests.MortgageCalculatorDataDrivenTest@389b0789]" started-at="2021-07-02T13:05:10 EDT" name="afterAllTests" finished-at="2021-07-02T13:05:13 EDT" duration-ms="3109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterAllTests -->
-      </class> <!-- tests.MortgageCalculatorTest -->
+      </class> <!-- tests.MortgageCalculatorDataDrivenTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

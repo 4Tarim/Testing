@@ -16,7 +16,7 @@ public class MortgageCalculatorDataDrivenTest extends Base {
 	private String excelFile = "src/test/resources/testData/"
 			+ "CalculaterTestData.xls";
 
-	@DataProvider(name = "MortgageTestDataSet1")
+	@DataProvider(name = "MortgageCalculatorTestData")
 	private Object[][] calculatorData(){
 		Object[][] data = null;
 		ExcelManager excelUtil = new ExcelManager(excelFile, 0);
@@ -24,7 +24,7 @@ public class MortgageCalculatorDataDrivenTest extends Base {
 		return data;
 	}
 
-	@Test(dataProvider = "MortgageTestDataSet1" )
+	@Test(dataProvider = "MortgageCalculatorTestData" )
 	public void dataDrivenTests(String amount, String Myear, String Mmonth,
 			String intYear, String intMonth, String intType, String intRate,
 			String startMonth, String startYear, String paymentPeriod,
