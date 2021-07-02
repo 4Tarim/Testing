@@ -18,9 +18,10 @@ public class Base {
 
 	public static WebDriver driver;
 	public static GlobalSeleniumLibrary selLibrary;
+	public ExtentReports report;
 	private String browserType;
 	private String hubURL;
-	public ExtentReports report;
+	
 
 	/***
 	 * before all tests start, this method runs only 1 time
@@ -67,7 +68,7 @@ public class Base {
 		JavaPropertiesManager configProp = new JavaPropertiesManager("src/test/resources/config.properties");
 		String isSendEmail = configProp.readProperty("sendEmail");
 		if (isSendEmail.toLowerCase().contains("on")) {
-			// Sending emails...
+			// Sending email
 			EmailManager email = new EmailManager();
 			email.toAddress = "selenium.jenkins.email@gmail.com";
 			email.ccAddress = "selenium.jenkins.report@gmail.com";
