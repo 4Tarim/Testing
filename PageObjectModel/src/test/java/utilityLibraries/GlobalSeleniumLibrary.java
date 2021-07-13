@@ -77,14 +77,16 @@ public class GlobalSeleniumLibrary {
 		IE, FIREFOX, CHROME, SAFARI, EDGE
 	}
 
+	// constructor
 	public GlobalSeleniumLibrary() {
 
 	}
 
+	// constructor
 	public GlobalSeleniumLibrary(WebDriver _driver) {
 		driver = _driver;
 	}
-
+    
 	public WebDriver getDriver() {
 		return driver;
 	}
