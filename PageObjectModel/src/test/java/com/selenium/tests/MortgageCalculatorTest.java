@@ -1,10 +1,11 @@
-package tests;
+package com.selenium.tests;
 
 import org.apache.log4j.Logger;
 import org.testng.annotations.Test;
 
-import mortgageCalculatorPages.HomePage;
-import mortgageCalculatorPages.ResultPage;
+import com.selenium.mortgageCalculatorPages.HomePage;
+import com.selenium.mortgageCalculatorPages.ResultPage;
+
 import utilityLibraries.Base;
 
 public class MortgageCalculatorTest extends Base {

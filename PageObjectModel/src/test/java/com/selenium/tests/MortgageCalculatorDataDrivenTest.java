@@ -1,12 +1,13 @@
-package tests;
+package com.selenium.tests;
 
 import org.apache.log4j.Logger;
 import org.testng.AssertJUnit;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import mortgageCalculatorPages.HomePage;
-import mortgageCalculatorPages.ResultPage;
+import com.selenium.mortgageCalculatorPages.HomePage;
+import com.selenium.mortgageCalculatorPages.ResultPage;
+
 import utilityLibraries.Base;
 import utilityLibraries.ExcelManager;
 

@@ -1,4 +1,4 @@
-package mortgageCalculatorPages;
+package com.selenium.mortgageCalculatorPages;
 import static org.testng.Assert.assertNotNull;
 import static org.testng.Assert.assertTrue;
 import org.apache.log4j.Logger;

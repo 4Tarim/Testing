@@ -1,4 +1,4 @@
-package tests;
+package com.selenium.tests;
 
 import java.net.URL;
 

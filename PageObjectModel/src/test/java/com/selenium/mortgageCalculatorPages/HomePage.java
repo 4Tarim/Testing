@@ -1,4 +1,4 @@
-package mortgageCalculatorPages;
+package com.selenium.mortgageCalculatorPages;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
